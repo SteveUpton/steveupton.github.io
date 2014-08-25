@@ -3,6 +3,12 @@
   
   
   <url>
+    <loc>http://SteveUpton.github.io/blog/2014/08/24/whisky-in-the-gobi/</loc>
+    <lastmod>2014-08-24T14:55:01+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://SteveUpton.github.io/blog/2014/06/07/pimsleur-and-michel-thomas/</loc>
     <lastmod>2014-06-07T14:45:15+01:00</lastmod>
     <priority>0.8</priority>
@@ -29,14 +35,14 @@
   
   <url>
     <loc>http://SteveUpton.github.io/blog/archives/</loc>
-    <lastmod>2014-08-25T15:12:24+01:00</lastmod>
+    <lastmod>2014-08-25T18:42:00+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://SteveUpton.github.io/</loc>
-    <lastmod>2014-08-25T15:12:24+01:00</lastmod>
+    <lastmod>2014-08-25T18:42:00+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
