@@ -7,7 +7,7 @@ categories:
 tags: language, russian
 ---
 
-Final update on my Russian learning before I jet off to Russia. Check out Part 1 and Part 2.
+Final update on my Russian learning before I jet off to Russia. Check out [part 1]({% post_url 2013-09-24-learning-russian-part-1 %}) and [part 2]({% post_url 2014-01-03-learning-russian-part-2 %}).
 
 <!-- more -->
 
