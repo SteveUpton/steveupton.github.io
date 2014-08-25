@@ -11,7 +11,7 @@ More updates on my efforts to learn Russian. Check out [part 1]({% post_url 2013
 
 <!-- more -->
 
-### September
+## September
 
 My focus for September was growing my vocabulary. I started picking out more relevant words from frequency lists and actively searching for words I'm likely to need.
 
@@ -19,7 +19,7 @@ For a number of reasons, I've had less free time to devote to proper 'study' of 
 
 It's also worth noting that I've completely stopped using Memrise at this point. Its limitations are pretty glaring after having used Anki so extensively, so after dipping in to make sure all the words from my Memrise courses are in my Anki deck, I pretty much left it for good.
 
-### October
+## October
 
 October was also quite busy for me and again left me with little time to devote to actively studying Russian. Despite this, I've been making good progress with the Michel Thomas Advanced course, which is currently the centrepiece of my Russian learning. I've also put more time into listening to RusPod modules, aiming for at least 1 a day, generally in the background while I work.
 
@@ -27,7 +27,7 @@ About midway through the month I started actively practising (via Skype calls) w
 
 Finally, during the latter half of the month I went on a card making binge and started to increase the number of new Anki cards I introduced every day, balancing this with the overhead of needing to make more cards in the limited time I have.
 
-### November
+## November
 
 Around the start of the month, I finally started to get to get to grips with the accusative case as it was introduced to me as part of the Michel Thomas Advanced course. Since its introduction, I've added lots of examples to my Anki deck and am now confident enough to generate and use the accusative forms of nouns and adjectives.
 
@@ -38,7 +38,7 @@ Around mid-November I started periodically skimming [Pravda.ru](http://www.pravd
 I was away for a few weekends this month, and didn't get through quite as much content as normal, but despite this, I'm really happy with my progress, having finally gotten a handle on some two elements of Russian (accusative case, verbs of motion) that had previously eluded me. By the end of the month I had upped the number of new cards introduced per day to 25 - predictably, this has increased Anki review counts, now regularly falling into the 120-130 card range. 
 
 
-### December
+## December
 
 A good chunk of December was focused on wrapping up the Michel Thomas Vocabulary course and getting useful words/sentences into my Anki deck. This took a little longer than with the previous as this course moves noticeably faster than the previous levels, so I find myself preferring/needing to go over the content a second time (while extracting audio for my Anki cards) before pressing forward, lest I be left out of my depth. A virtue of moving faster is that the vocabulary course gets through much more content, covering the remaining cases and prepositions which I see as the last 'building blocks' of the language I need to master.
 
