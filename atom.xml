@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[The continuing adventures of Steve]]></title>
+  <link href="http://SteveUpton.github.io/atom.xml" rel="self"/>
+  <link href="http://SteveUpton.github.io/"/>
+  <updated>2014-08-25T14:22:24+01:00</updated>
+  <id>http://SteveUpton.github.io/</id>
+  <author>
+    <name><![CDATA[Steve]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Pimsleur and Michel Thomas]]></title>
+    <link href="http://SteveUpton.github.io/blog/2014/06/07/pimsleur-and-michel-thomas/"/>
+    <updated>2014-06-07T14:45:15+01:00</updated>
+    <id>http://SteveUpton.github.io/blog/2014/06/07/pimsleur-and-michel-thomas</id>
+    <content type="html"><![CDATA[<p>If you&rsquo;ve ever looked at language courses, the chances are you&rsquo;ve run across The Pimsleur Approach and its lofty claims. Recently, I followed the Pimsleur Russian course as well as the similar, though slightly less well publicised Michel Thomas Russian course and wanted write up some of my thoughts them.</p>
+
+<!-- more -->
+
+
+<p>For reference, I followed the courses in this order:</p>
+
+<p>Pimsleur Speak and Read Essential Russian 1 (15 hours)
+Michel Thomas Foundation Russian
+Michel Thomas Advanced Russian
+Michel Thomas Russian Vocabulary
+You can read more about my attempts to learn Russian here.</p>
+
+<h3>Course Descriptions</h3>
+
+<p>Pimsleur and Michel Thomas are both audio only courses (Michel Thomas does have a small reading section, but it&rsquo;s barely worth mentioning) that frequently encourage the listener to speak Russian in response to an instructor&rsquo;s prompts - the nature of the prompts varies between the courses, which I&rsquo;ll return to later, but they broadly follow the same structure:</p>
+
+<ol>
+<li>Introduce a Russian word and its English translation.</li>
+<li>Cover the correct pronunciation of said word.</li>
+<li>Practice using the word in a variety of sentence structures.</li>
+</ol>
+
+
+<p>This process is repeated with gradually more complicated sentence structures as your vocabulary grows, calling back to previously learned words and using them in newer structures as well.</p>
+
+<p>Despite their structural similarities, they differ in a number of ways. For one, Pimsleur is much more demanding of listener, asking that you devote a contiguous block of 30 minutes every day to it and review lessons if you feel you haven&rsquo;t grasped most of the introduced words. By comparison, Michel Thomas opens by saying that you should relax, not worry about memorizing and that the responsibility for your learning lies with the instructor.</p>
+
+<p>The most obvious difference though, is Michel Thomas&#8217; use of students. The lessons take the form of a recorded lesson between an instructor and 2 students (one male and one female), with the listener encouraged to pause and attempt to answer the instructors challenges to the students, ostensibly becoming a third student in the recorded lesson.</p>
+
+<p>Importantly, Michel Thomas introduces a lot more vocabulary than Pimsleur does in an equivalent amount of time. I&rsquo;ll get into the reasons for this later and why it might not be entirely a bad thing, but it is still worth bearing in mind.</p>
+
+<h3>Impressions</h3>
+
+<p>Before I talk about my overall experiences with the courses, I&rsquo;ll start with a few disclaimers. First, in the time I&rsquo;ve been learning Russian, I&rsquo;ve been following multiple courses (audio and otherwise) at the same time, so none of these courses have been used in isolation. Also, I constitute a sample size of one, so remember that these are my personal impressions only and of course, your mileage may vary.</p>
+
+<p>First off, a few things that both courses do well. The most important point is that they both encourage you to speak Russian early and often, checking your pronunciation against native speakers - this is a really big deal and something you&rsquo;ll be missing out on completely if you only follow passive courses or written lessons. Both courses make good use of small &lsquo;challenges&rsquo; (eg. &ldquo;How would you say X in Russian?&rdquo;) that require you to figure out new sentence structures or conjugations that you haven&rsquo;t heard before. These challenges are set up to be easy enough, building on your existing knowledge, but the feeling of having a strong enough grasp of the language to make new constructions goes a long way towards building confidence.</p>
+
+<p>Both courses also follow a similar philosophy of shielding you from jargon and lengthy explanations (at least early on) of grammatical rules, focusing instead on building your confidence before introducing more advanced concepts. It is in the introduction of advanced concepts however, that I saw the divergence between the courses, and also where I found myself gravitating towards Michel Thomas&rsquo;s approach.</p>
+
+<h3>The differences</h3>
+
+<p>There were a few aspects of the Michel Thomas that initially caused it to gain favour with me, the most obvious being that it covers much more content in a given length of time. Importantly though, its tone is more relaxed and the format is more suited to listening in small chunks (I listened while cooking or walking to work), which fitted my schedule much better than Pimsleur.</p>
+
+<p>At first, I thought the &lsquo;recorded lesson&rsquo; format of Michel Thomas was a gimmick, but ultimately came around to the idea as the students asked insightful questions and made mistakes that reminded me I didn&rsquo;t need to be perfect (further reinforcing the maxim of not worrying about memorization).</p>
+
+<p>As an engineer, I like to understand how things work, which MT makes much more clear, frequently explaining elements of the language and grammar in plain terms along with numerous examples. By comparison, Pimsleur almost never explicitly explains or even references grammatical rules (at least as far as I progressed with it), leaving the listener to infer rules from examples and sporadic hints from the instructor. Despite leaving me hungry for more explanation, the Pimsleur approach can work very well here as it relies on our innate pattern matching abilities, but can also introduce many of the same issues seen in child language acquisition (eg. incorrectly extrapolating a perceived rule: &ldquo;You&rsquo;re my bestest friend!&rdquo;), which Pimsleur prides itself on mimicking.</p>
+
+<p>In the end, I developed a strong preference for Michel Thomas&#8217; approach to explaining concepts as I found myself comprehending non-trivial concepts much faster than with Pimsleur. Another thing to note is that Michel Thomas actually does make direct reference to grammatical terms (accusative case, imperfective etc.) but only <em>after</em> you are confident actually using them - by comparison, the most technical term I ever encountered in Pimsleur was a reference to words being gendered. This might seem a trivial detail, but it really helped tie in with other sources (books, other courses etc.) and led to some real &lsquo;ah-ha!&rsquo; moments as a previously encountered concept becomes more clear.</p>
+
+<p>At its heart, Pimsleur is a <a href="http://en.wikipedia.org/wiki/Spaced_repetition">Spaced Repetition</a> system, relying on this to cement words in your long term memory and your aforementioned pattern matching abilities to pick up grammatical constructs. On paper this sounds great - you should end up with an intuitive understanding of the language without having to actively focus on learning it, but I found it had some significant pitfalls. For one, it takes much longer than simply explaining grammar as you have to build up a lot of examples before you can start recognizing complex grammatical patterns - it should result in more &lsquo;natural&rsquo; learning, but it means a lot of repetition. More pertinently, Pimsleur&rsquo;s reliance on spaced repetition make it very sensitive to missing your daily sessions. The first time I attempted to follow Pimsleur Russian, life got in the way and I left a few days between each unit which seriously hurt my progress as the course expects you to be up to speed with the last unit&rsquo;s material fairly fresh in your mind.</p>
+
+<p>For all the issues I had with it, I can&rsquo;t argue with the effectiveness of the Pimsleur approach. I found the constant demand for timely responses (something MT puts no emphasis on), while occasionally stressful, was quite effective at eliciting timely responses, as I found myself responding more rapidly to Pimsleur prompts. Pimsleur also succeeded in making me think more &lsquo;conversationally&rsquo; (one of its main selling points) as it often presents you with a question and challenges you to respond in Russian - something MT rarely does. Although the complexity of the sentences MT and Pimsleur expect you to construct are similar, the context in which you are expected to come up with them are notably different, for example, MT will ask you to translate sentence X into Russian, while Pimsleur may ask you a question and expect you to respond in Russian. Many Pimsleur units include a faux conversation in which you are given a broad instructions on how to respond to a speaker, e.g.. &ldquo;Mr. X will suggest things, decline and suggest the opposite&rdquo; another effective way of encouraging you to think conversationally.</p>
+
+<p>A relevant anecdote here - I found myself able to easily recall words that I learned in Pimsleur (but hadn&rsquo;t encountered in the months since stopping), faster than Michel Thomas words I had practised the previous day. This could be a complete fluke or a validation of <a href="http://www.pimsleurmethod.com/pimsleur-graduated-interval-recall.html">Pimsleur&rsquo;s Graduated Interval Recall</a>, but perhaps worth considering.</p>
+
+<h3>Advice</h3>
+
+<p>A few bits of advice if you&rsquo;re thinking of following either course:</p>
+
+<p><strong>Revise in your down-time</strong>: More important for Pimsleur with its heavy reliance on having the last unit&rsquo;s material fresh in your mind, but you should look for a way to quickly review your words for when you inevitably miss a day or two. I recommend taking the time to build up an Anki deck as you go, which allows you to practice in just a few minutes every day. It&rsquo;s worth noting that MT <em>explicitly</em> advises against this, citing it&rsquo;s mantra of never worrying about recall, which may be a reasonable approach during the course itself, but in the long term, you&rsquo;re probably going to want to retain your knowledge without having to revisit the whole course.
+<strong>Combine with other courses</strong>: No single course is going to teach you everything, so combine courses. I personally found the <a href="http://www.penguin.co.uk/nf/Book/BookDisplay/0,,9780140120417,00.html">Penguin Russian book</a> worked as a great companion, solidifying concepts  that were hinted at in Pimsleur and offering more detailed explanations than Michel Thomas provides. Pimsleur claims learning grammar in this way can be destructive - maybe its my inquisitive nature, but I found my progress was only enriched by learning in this way.
+<strong>Learn Cyrillic</strong>: Pimsleur doesn&rsquo;t cover written Russian at all and Michel Thomas gives it a CD&rsquo;s worth of material at the end of the foundation course, but if you&rsquo;re ever planning on visiting Russia or following any of the countless courses that use Cyrillic, it&rsquo;s a useful skill to put some time into.</p>
+
+<h3>Final Words</h3>
+
+<p>To start with, I found Pimsleur hugely valuable to me - more than anything else, it built my confidence to use the language fluidly. Its not perfect though, it doesn&rsquo;t cover as much as you might expect for a 15 hour course and the pace can sometimes seem frustratingly slow. For someone beginning at Russian who is willing to devote 30 minutes a day to it, I can recommend Pimsleur Russian.</p>
+
+<p>Michel Thomas is course I can give a broader recommendation to. Though superficially similar to Pimsleur, it covers a lot more content and in a plainer and more flexible format and relaxed tone which I preferred. It may not give quite the same level of recall or &lsquo;intuitive&rsquo; understanding that Pimsleur does, but it&rsquo;s explanations are among the best I&rsquo;ve heard and well worth your time investment.</p>
+
+<p>tl;dr? Pimsleur teaches less, but really cements what it does in your brain. Michel Thomas teaches a lot more but doesn&rsquo;t focus on SRS and growing confidence as much as Pimsleur.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Learning Russian - Part 3]]></title>
+    <link href="http://SteveUpton.github.io/blog/2014/04/02/learning-russian-part-3/"/>
+    <updated>2014-04-02T20:38:44+01:00</updated>
+    <id>http://SteveUpton.github.io/blog/2014/04/02/learning-russian-part-3</id>
+    <content type="html"><![CDATA[<p>Final update on my Russian learning before I jet off to Russia. Check out Part 1 and Part 2.</p>
+
+<!-- more -->
+
+
+<h3>January</h3>
+
+<p>January was largely spent adding vocab and  the last of the Michel Thomas units to my anki deck as I wanted to be free of that particularly time consuming aspect of my learning.</p>
+
+<p>I also decided to return to The Penguin Book that I used more extensively in my earlier studies - with a much better understanding of cases and how the language works, I was able to skim the material very easily and add many words from the vocab lists to my Anki deck.</p>
+
+<p>In a similar vein, I returned to several Russian language apps that I had briefly toyed with when I started learning Russian. Mostly glorified phrasebooks and half-arsed flashcard systems, I was still able to grab a bit of useful vocabulary out of them.</p>
+
+<h3>February</h3>
+
+<p>An unexpected business trip turned February into quite a hectic month, but luckily I had built up a large buffer of cards in January that meant I didn&rsquo;t need to spend much time creating new cards - just grabbing the a few words from the Penguin Russian book and the last Michel Thomas lessons.</p>
+
+<p>Given that I now have only ~60 days until April, I&rsquo;ve upped the number of new Anki cards a day to 30, so as to get as much practice as possible.</p>
+
+<p>I&rsquo;ve also been putting a little time into basic Mandarin, following exactly the same process I&rsquo;ve been using for Russian (Michel Thomas and Anki), but the focus is less here as I&rsquo;ll be in more metropolitan areas and for less time.</p>
+
+<h3>March</h3>
+
+<p>The final batch of cards I added to my Anki deck mostly consisted of the last few &lsquo;essential&rsquo; words - after adding them to my Anki deck, I spent the rest of the month simply working through them.</p>
+
+<h3>Progress so far</h3>
+
+<p>As I write this it is April 2nd and I will be flying to Russia in 5 days. I have stopped adding new cards to my Anki deck at this point.</p>
+
+<p><strong>Speaking/Listening</strong> I can construct many simple sentences without conscious effort, even including simple case declensions. More complicated sentences require forethought or slower speaking speeds. I&rsquo;m still aware that there are complicated sentence structures that I am unable to reproduce, but I feel confident that I can convey my meaning in most cases.</p>
+
+<p><strong>Reading/Writing</strong> I can now read Cyrillic at around 70% speed for words of less than 4 syllables. I can identify many known words almost instantly and easily infer the type and sometimes meaning of an unknown word, allowing me figure out sentence structures easily.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Learning Russian - Part 2]]></title>
+    <link href="http://SteveUpton.github.io/blog/2014/01/03/learning-russian-part-2/"/>
+    <updated>2014-01-03T18:53:16+00:00</updated>
+    <id>http://SteveUpton.github.io/blog/2014/01/03/learning-russian-part-2</id>
+    <content type="html"><![CDATA[<p>More updates on my efforts to learn Russian. Check out part 1 here.</p>
+
+<!-- more -->
+
+
+<h3>September</h3>
+
+<p>My focus for September was growing my vocabulary. I started picking out more relevant words from frequency lists and actively searching for words I&rsquo;m likely to need.</p>
+
+<p>For a number of reasons, I&rsquo;ve had less free time to devote to proper &lsquo;study&rsquo; of the language (ie. reading the Penguin book), so most of my learning has been through audio that I&rsquo;ve been listening to in my free time. Michel Thomas has become a big focus as it covers a good amount of content as well as providing plenty of snippets for my Anki deck. I finished the 8 CD Foundation course in late September and moved straight onto the 4 CD Advanced course immediately.</p>
+
+<p>It&rsquo;s also worth noting that I&rsquo;ve completely stopped using Memrise at this point. Its limitations are pretty glaring after having used Anki so extensively, so after dipping in to make sure all the words from my Memrise courses are in my Anki deck, I pretty much left it for good.</p>
+
+<h3>October</h3>
+
+<p>October was also quite busy for me and again left me with little time to devote to actively studying Russian. Despite this, I&rsquo;ve been making good progress with the Michel Thomas Advanced course, which is currently the centrepiece of my Russian learning. I&rsquo;ve also put more time into listening to RusPod modules, aiming for at least 1 a day, generally in the background while I work.</p>
+
+<p>About midway through the month I started actively practising (via Skype calls) with native Russian speakers I had gotten in touch with through <a href="http://polyglotclub.com">PolyglotClub</a>. This was something I had been putting off for a while, perpetually promising myself that I&rsquo;ll just wait until I get just a &lsquo;little better&rsquo;, but I&rsquo;m really glad I finally did this and actually practised what I&rsquo;ve been learning for so long. It was a rewarding experience but also highlighted some of my weaknesses, importantly, my speed - a 2 second pause might be trivial when reviewing an Anki card, but it can be noticeable when in a real conversation. I&rsquo;m hoping this will improve naturally with time.</p>
+
+<p>Finally, during the latter half of the month I went on a card making binge and started to increase the number of new Anki cards I introduced every day, balancing this with the overhead of needing to make more cards in the limited time I have.</p>
+
+<h3>November</h3>
+
+<p>Around the start of the month, I finally started to get to get to grips with the accusative case as it was introduced to me as part of the Michel Thomas Advanced course. Since its introduction, I&rsquo;ve added lots of examples to my Anki deck and am now confident enough to generate and use the accusative forms of nouns and adjectives.</p>
+
+<p>Around the same time I was also re-introduced to the verbs of motion through Michel Thomas Advanced and finally started to understand them. I had previously been introduced to the infinitive form of these verbs through RusPod, but had failed to really grok them until Michel Thomas provided me with plenty of examples of their use.</p>
+
+<p>Around mid-November I started periodically skimming <a href="http://www.pravda.ru/">Pravda.ru</a>, using it as a source of natural Russian to learn from. I was also lucky to meet a native Russian speaker with whom I was able to practice briefly - she spoke quickly but I was able to understand a decent amount as well as communicate a few things back to her.</p>
+
+<p>I was away for a few weekends this month, and didn&rsquo;t get through quite as much content as normal, but despite this, I&rsquo;m really happy with my progress, having finally gotten a handle on some two elements of Russian (accusative case, verbs of motion) that had previously eluded me. By the end of the month I had upped the number of new cards introduced per day to 25 - predictably, this has increased Anki review counts, now regularly falling into the 120-130 card range.</p>
+
+<h3>December</h3>
+
+<p>A good chunk of December was focused on wrapping up the Michel Thomas Vocabulary course and getting useful words/sentences into my Anki deck. This took a little longer than with the previous as this course moves noticeably faster than the previous levels, so I find myself preferring/needing to go over the content a second time (while extracting audio for my Anki cards) before pressing forward, lest I be left out of my depth. A virtue of moving faster is that the vocabulary course gets through much more content, covering the remaining cases and prepositions which I see as the last &lsquo;building blocks&rsquo; of the language I need to master.</p>
+
+<p>My hope is that once I&rsquo;ve gotten confident with the the content so far, plus the cases and prepositions, I should be in a good position to focus on &lsquo;simply&rsquo; growing my vocabulary without spending as much time learning new grammatical rules. This isn&rsquo;t to say I&rsquo;ll just be adding words to my Anki deck from now on, but that I can also move onto more &lsquo;advanced&rsquo; and domain specific material that doesn&rsquo;t need to introduce the basics.</p>
+
+<h3>Current Progress</h3>
+
+<p><strong>Speaking</strong>: I&rsquo;m continuing to gain confidence speaking, finding myself able to construct increasingly complicated sentences (such as summarising the last few years of my life, explaining dietary requirements etc.) as well as rapidly formulate Russian versions of short, everyday phrases. I really feel like I&rsquo;ve made big steps in understanding the language enough to use it confidently and my focus now needs to be on expanding my vocabulary.</p>
+
+<p><strong>Listening</strong>: My listening is getting better, but still worse than my speaking thanks to the simple facts that there are still a lot of words I don&rsquo;t know and I haven&rsquo;t listened to too much natural spoken Russian. I think I need to focus on listening to natural Russian (outside of language courses) simply to get used to the speed</p>
+
+<p><strong>Reading/Writing</strong>: At this point I&rsquo;m able to read simple sentences/signs at a glance - with less accuracy than English of course, but I&rsquo;m feeling good about reading level for now.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Learning Russian - Part 1]]></title>
+    <link href="http://SteveUpton.github.io/blog/2013/09/24/learning-russian-part-1/"/>
+    <updated>2013-09-24T15:27:00+01:00</updated>
+    <id>http://SteveUpton.github.io/blog/2013/09/24/learning-russian-part-1</id>
+    <content type="html"><![CDATA[<p>Travelling across Russia on the <a href="http://en.wikipedia.org/wiki/Trans-Siberian_Railway">Trans-Siberian Railroad</a> has been on my bucket list for the better part of a decade. When, in late May 2012, my brother moved to China to teach English, this gave me the perfect excuse to start planning an actual trip. Taking the train from Moscow to Beijing would put me put me only a few hours from visiting my brother and check off a major item from my bucket list to boot, so my plan formed quickly. But I hate to be &lsquo;the tourist&rsquo; - I wanted to speak the language and interact meaningfully with the people. I&rsquo;d attempted to learn Russian once previously with little success. With the looming possibility of being unable to communicate effectively for several weeks, I vowed that this time would be different. This is the first in a series of posts on my attempts to learn Russian that will hopefully be useful to others doing the same.</p>
+
+<!-- more -->
+
+
+<h3>My Goals</h3>
+
+<p>My focus is on speaking; I want to be able to verbally navigate my way around every-day situations and have reasonable conversations beyond the usual tourist stuff. At least a basic level of reading, for signs, menus etc is also desirable - ideally at a semi decent speed. Cursive writing isn&rsquo;t important to me. Simply put; I&rsquo;ll be spending two weeks travelling across Russia and I don&rsquo;t want to feel like <em>that tourist</em>. The trip is planned for early April 2014, which gives me ~10 months from late May 2013. This post will cover my previous attempt to learn Russian and the first 4 months of my renewed efforts to learn Russian properly.</p>
+
+<p>I had previously attempted the Russian Pimsleur course, but for various reasons, I had given up on it about 14 lessons (~7 hours of content) in. I really got a lot out of the course and felt confident using the vocab I had learned through it, but the way I used it caused some issues. The main problem was that Pimsleur relies on you doing a 30 minute lesson <em>every</em> day, which isn&rsquo;t too much of an ask, but when I started leaving a day or several between lessons, the system broke down and I found myself repeating previous lessons (each requiring a contiguous 30 minute block of free time) to refresh my memory, leaving it a few days again and repeating the whole process. This brought my progress to a frustrating crawl and led me to give up on it. In addition to Pimsleur, I picked up Cyrillic to a reasonable level and generally read around a few Russian learning sites. As much of my Russian had faded, I felt I had a slight, but not significant advantage this time round.  </p>
+
+<h3>May</h3>
+
+<p>I started off as I had before, with the same Pimsleur Russian course. This time around, I felt confident starting a few lessons in and was able to progress pretty quickly to around lesson 12. As mentioned, the main reason I stopped using Pimsleur last time was that I would often let too much time pass between lessons. Inevitably, this would happen again, so I had to figure out some way to counter the problem such that it wouldn&rsquo;t cause the same problems as last time. The solution I settled on was <a href="http://www.memrise.com/">Memrise</a>, an online flashcard based learning system with spaced repetition and community developed courses. I quickly found a Pimsleur Russian course (<em>update</em>: it&rsquo;s gone now) and formed a plan: after completing a Pimsleur unit I would complete the associated level in the Memrise course. Completing the Memrise level would reinforce the vocab/structures from the Pimsleur unit and Memrise made it much easier to continue practising them every day (requiring only a few minutes at a time rather than the 30 contiguous minutes demanded by Pimsleur). Using this combination, I hoped that breaks between Pimsleur units would become less of an issue, which was particularly important as I would shortly be going on a three-week road trip - meaning an effective three-week hiatus on new Pimsleur units. In addition to all that, I revised the Cyrillic alphabet (including using another <a href="http://www.memrise.com/course/36176/russian-alphabet-4/">Memrise course</a>) and started following a few other Memrise courses, including a <a href="http://www.memrise.com/course/78463/hacking-russian-2/">Hacking Russian</a> course - more on that later. I also started listening to the <a href="http://ruspod.com/shorts/">RusPod Shorts</a> series, which introduced a decent amount of vocabulary in an easy to consume way.</p>
+
+<h3>June</h3>
+
+<p>I spent most of this month road tripping down the US West Coast, using mostly Memrise on my tablet when we had a connection. Using Memrise to practice the Pimsleur content worked like a charm and quickly alleviated any concerns I had about going almost a month without a new Pimsleur unit. The Hacking Russian course I mentioned earlier though didn&rsquo;t work out quite so well. On paper, a <a href="http://www.memrise.com/course-creation/#hacking-courses">language &lsquo;hacking&rsquo; course</a> looked perfect; it was formulated to introduce words based on word frequency data and language studies in order to get you conversational quickly. At first it covered words I already knew and was confident with from elsewhere but additionally forced me to write them out in Cyrillic (making me practice with the Russian keyboard layout as a bonus) giving me a greater appreciation for the language. A few levels in though, I started being introduced to words I had not encountered before and had never heard used in context. Attempting to memorize these words was futile as even once I had committed them to memory (a more arduous process than with the previously encountered words), all I really had was a simple mapping between a Russian word and an English word, with none of the understanding or confidence to use it in a sentence that I got when I learned a word from Pimsleur. I soon realized that attempting to memorize a word without understanding how to use it is essentially pointless - obvious in hindsight, but a point that would shape my future learning. After returning to the UK, I started gathering additional sources of Russian tutelage. The notable ones were the <a href="http://ruspod.com/">RusPod</a> site, which did a good job of introducing vocabulary and grammar in a relaxed way and the <a href="http://www.penguin.co.uk/nf/Book/BookDisplay/0,,9780140120417,00.html">New Penguin Russian Course</a> book, which as time went on would be the main source of my understanding of Russian grammar.</p>
+
+<h3>July</h3>
+
+<p>In late June/early July, I discovered <a href="http://ankisrs.net/">Anki</a>, which changed the way I learned. I hope to write more about Anki and its strengths compared Memrise separately, but suffice to say it is a multi-platform, incredibly customisable, <a href="http://en.wikipedia.org/wiki/Spaced_repetition">spaced-repetition</a> flashcard system. The important point for the upcoming discussion is that it distinguishes between ‘notes‘ (a unit of information, also known as a fact) and ‘cards‘ (a question/answer pair derived from a given note – similar to a view in database terminology). A note consists of fields, in this case, I had the Russian word in Cyrillic, the English translation, Russian audio and a few others, but from this I configured Anki to generate up to three ‘cards‘ for each note:</p>
+
+<ul>
+<li>Show the Russian text, test recall of the English translation.</li>
+<li>Show the English text, test recall of the Russian word.</li>
+<li>Play the (Russian) audio, test recall of the English translation.</li>
+</ul>
+
+
+<p>This would give me practice translating to and from Russian text and audio as well as triply reinforcing each word. My first order of business was to start populating my Anki card deck. I began adding words, phrases and sentence fragments I had learned from Pimsleur, the RusPod series and assorted other sources and soon I had a deck populated with ~100 notes from which were generated ~250 cards.</p>
+
+<p>The structure of my learning stayed more or less the same, continuing on with Pimsleur, RusPod, Penguin etc. but with the important addition that once I was confident I understood how to use a word, I added it into my Anki deck. This effectively decoupled the initial learning of a word from actually committing it to long term memory, meaning I never had to return to an old lesson or vocab list one I had added a word to Anki; in essence, Anki acted as a proxy for my long term memory.</p>
+
+<p>Quite a lot of this month was spent with the Penguin Russian book getting to grips grammar. This was first time I had really tried to grok Russian cases and the finer points of gendered nouns and by the end of the month, I was still feeling pretty daunted by cases, but fairly confident with conjugated verbs and genders.</p>
+
+<p>I also spent a lot of this month refining and tweaking my Anki note and card templates – by the end of the month I was pretty pleased with my setup and had 313 notes/915 cards. Anki can generate some nice progress summaries, so I’ll start including them at the end of each month from here on out.</p>
+
+<h3>August</h3>
+
+<p>At this point, my usage of Anki/learning in general has solidified into the following structure:</p>
+
+<ul>
+<li>Review Anki cards on my tablet after waking up - these typically take up to around 20 minutes and consist of 20 new cards and 60+ review cards each day.</li>
+<li>During the day, I try and study a little Russian whenever I get the chance. I work full time, but if I can spare a few minutes to pick up some new vocab or grammar over lunch or during a build, I’ll do that.</li>
+<li>On days when I don’t have anything going on in the evening, I try and add the words I picked up during the previous day(s) to my Anki deck. This is the most time consuming aspect of the process as I’ve constructed some extensive note/card templates with audio prompts, requiring me to find audio of the word/phrase (I generally use some combination of <a href="www.forvo.com">forvo.com</a> and snippets from the audio files I’m learning from) and do some trivial editing for every note I add to the deck. This puts a significant overhead to adding cards, but I find the audio useful.</li>
+</ul>
+
+
+<p>I generally try and add around 10 new notes (corresponding to ~30 cards) to my Anki deck each day and have ~200 ‘unseen’ cards in my deck to give me a buffer of new content to learn if I go a few days without adding new notes (which happens fairly frequently).</p>
+
+<p>Since July I’ve got into a routine with Pimsleur: every other day I go for a run after work, lasting 30-45 mins, during which I listen to a new Pimsleur unit and on the intervening day I try and add content from that unit to my Anki deck. The Pimsleur files are among the most time consuming to scrub through and extract audio snippets from, meaning I generally have a backlog of content to add, but this routine serves me fairly well.</p>
+
+<p>At this point I’ve grown confident enough to look-up/learn words independently from frequency lists/dictionaries and add them to my Anki deck. Ideally, for every word I add, I also like to add at least one example of it being used in a short sentence or fragment – this is particularly important with the many verb conjugations. Courses like Pimsleur and Michel Thomas (see below) are very useful for this as they provide lots of usage examples for the words they introduce.</p>
+
+<p>The content I’m using this month:</p>
+
+<ul>
+<li><em>RusPod</em>: The content is pretty high quality and presented well. I’m mostly using it for picking up grammar/vocab in context as well as bits of cultural info.</li>
+<li><em>Penguin Russian book</em>: A good source of vocab and reading practice as well as my main source of formal grammar education, solidifying concepts I’ve been picking up through Pimsleur. Some sections can be a bit slow going but it is generally provides comprehensive and clear explanations of the myriad grammar rules.</li>
+<li><em>Pimsleur</em>: I finished level 1 in early August and spent some time working through a backlog of words/phrases I wanted to extract and add to my Anki deck. I didn’t immediately start on level 2 as I felt I was getting diminishing returns from the course and a knee injury stopped my running/listening to Pimsleur routine.</li>
+<li><em>Michel Thomas Russian Foundation</em>: The Michel Thomas method is similar to Pimsleur in that it is completely audio based with an instructor introducing words and working them into known and new sentence structures for practice (which provides great material to add to my Anki deck). Unlike Pimsleur, its pace and tone are much more relaxed and (despite encouraging the listener to pause and say things out loud) suitable for consuming in short bursts and I’ve started listening to it when I have a few minutes to spare walking to work or around town. With its much less rigorous focus on spaced repetition, it’s essentially a ‘light’ Pimsleur course and arguably more efficient now that I have Anki taking care of getting things into to my long term memory. I hope to write up some more detailed thoughts on it and its relation to Pimsleur later.</li>
+</ul>
+
+
+<p>Memrise is taking a back seat to Anki at this point, but I still dip into it periodically. At the end of the month, my Anki deck consisted of 530 notes and 1557 cards and I’m pleased to see that time I’m spending on reviews appears to have levelled out between 10 and 20 mins a day.</p>
+
+<h3>CURRENT PROGRESS</h3>
+
+<p><strong>Listening</strong>: I can follow simple conversations and a few isolated phrases and words when listening to Russian radio or music, generally enough to get the gist of the conversation but rarely enough to follow the whole thing. I haven’t been listening to as much Russian speech outside of my audio courses as I’d like, so I intend to step this up as I go forward.</p>
+
+<p><strong>Speaking</strong>: I’m feeling confident about my ability to describe many day-to-day situations, views and intentions. Cases are still pretty mysterious to me; I typically learn the nominative case and can generally identify <em>when</em> a different case is required, but not which case. This is something I’m hoping to improve on next month as it’ll be important when I start using more complicated sentence constructions. I’m happy with my progress, but am aware that I have a huge gaps in my vocabulary that I intend to address over the coming months.</p>
+
+<p><strong>Reading</strong>: On the reading front, I’m making good progress and reading noticeably faster. There is a bit of selection bias here as all of my Anki cards have Cyrillic translations, so I inevitably end up pretty practised at reading the words in my deck and I do read slower when faced with completely new text. I’m starting to pick out common syllables rather than sounding out every letter in my head, which, while I can’t do it all the time, is speeding up my reading. Words with 8+ syllables still pose problems unless I’m familiar with all the syllables in question. I can now pick up a random piece of Russian text and hope to divine at least some of its meaning from piecing together the words I recognise, which is a lot better than I could do a few months ago. I’m also finding it easier to predict stress when reading and distinguish а’s and unstressed о’s when trying to type a word I’ve only heard (which used to cause me some confusion).</p>
+
+<p><strong>Writing</strong>: My Russian writing/typing skills have also improved quite a bit by this point. Transcribing sentences/words from audio to add to my Anki deck has resulted in me typing a fair amount of Russian and I can find my way round the Russian keyboard much quicker than I could a few months ago. Needless to say, I’m much slower than with an English keyboard but I’m happy with the progress I’ve made as an unintended side effect of transcribing things for Anki.</p>
+]]></content>
+  </entry>
+  
+</feed>
