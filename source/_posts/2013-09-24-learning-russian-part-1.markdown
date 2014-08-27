@@ -11,7 +11,7 @@ Travelling across Russia on the [Trans-Siberian Railroad](http://en.wikipedia.or
 
 <!-- more -->
 
-### My Goals
+## My Goals
 
 My focus is on speaking; I want to be able to verbally navigate my way around every-day situations and have reasonable conversations beyond the usual tourist stuff. At least a basic level of reading, for signs, menus etc is also desirable - ideally at a semi decent speed. Cursive writing isn't important to me. Simply put; I'll be spending two weeks travelling across Russia and I don't want to feel like _that tourist_. The trip is planned for early April 2014, which gives me ~10 months from late May 2013. This post will cover my previous attempt to learn Russian and the first 4 months of my renewed efforts to learn Russian properly.
 
@@ -64,7 +64,7 @@ The content I’m using this month:
 
 Memrise is taking a back seat to Anki at this point, but I still dip into it periodically. At the end of the month, my Anki deck consisted of 530 notes and 1557 cards and I’m pleased to see that time I’m spending on reviews appears to have levelled out between 10 and 20 mins a day. Anki stats from [August](/images/posts/anki-stats-2013-08-31@15-19-11.png).
 
-### CURRENT PROGRESS
+## CURRENT PROGRESS
 
 **Listening**: I can follow simple conversations and a few isolated phrases and words when listening to Russian radio or music, generally enough to get the gist of the conversation but rarely enough to follow the whole thing. I haven’t been listening to as much Russian speech outside of my audio courses as I’d like, so I intend to step this up as I go forward.
 

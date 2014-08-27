@@ -19,7 +19,7 @@ Michel Thomas Advanced Russian
 Michel Thomas Russian Vocabulary
 You can read more about my attempts to learn Russian here.
 
-### Course Descriptions
+## Course Descriptions
 
 Pimsleur and Michel Thomas are both audio only courses (Michel Thomas does have a small reading section, but it's barely worth mentioning) that frequently encourage the listener to speak Russian in response to an instructor's prompts - the nature of the prompts varies between the courses, which I'll return to later, but they broadly follow the same structure:
 
@@ -35,7 +35,7 @@ The most obvious difference though, is Michel Thomas' use of students. The lesso
 
 Importantly, Michel Thomas introduces a lot more vocabulary than Pimsleur does in an equivalent amount of time. I'll get into the reasons for this later and why it might not be entirely a bad thing, but it is still worth bearing in mind.
 
-### Impressions
+## Impressions
 
 Before I talk about my overall experiences with the courses, I'll start with a few disclaimers. First, in the time I've been learning Russian, I've been following multiple courses (audio and otherwise) at the same time, so none of these courses have been used in isolation. Also, I constitute a sample size of one, so remember that these are my personal impressions only and of course, your mileage may vary.
 
@@ -43,7 +43,7 @@ First off, a few things that both courses do well. The most important point is t
 
 Both courses also follow a similar philosophy of shielding you from jargon and lengthy explanations (at least early on) of grammatical rules, focusing instead on building your confidence before introducing more advanced concepts. It is in the introduction of advanced concepts however, that I saw the divergence between the courses, and also where I found myself gravitating towards Michel Thomas's approach.
 
-### The differences
+## The differences
 
 There were a few aspects of the Michel Thomas that initially caused it to gain favour with me, the most obvious being that it covers much more content in a given length of time. Importantly though, its tone is more relaxed and the format is more suited to listening in small chunks (I listened while cooking or walking to work), which fitted my schedule much better than Pimsleur.
 
@@ -59,15 +59,15 @@ For all the issues I had with it, I can't argue with the effectiveness of the Pi
 
 A relevant anecdote here - I found myself able to easily recall words that I learned in Pimsleur (but hadn't encountered in the months since stopping), faster than Michel Thomas words I had practised the previous day. This could be a complete fluke or a validation of [Pimsleur's Graduated Interval Recall](http://www.pimsleurmethod.com/pimsleur-graduated-interval-recall.html), but perhaps worth considering.
 
-### Advice
+## Advice
 
 A few bits of advice if you're thinking of following either course:
 
-**Revise in your down-time**: More important for Pimsleur with its heavy reliance on having the last unit's material fresh in your mind, but you should look for a way to quickly review your words for when you inevitably miss a day or two. I recommend taking the time to build up an Anki deck as you go, which allows you to practice in just a few minutes every day. It's worth noting that MT _explicitly_ advises against this, citing it's mantra of never worrying about recall, which may be a reasonable approach during the course itself, but in the long term, you're probably going to want to retain your knowledge without having to revisit the whole course.
-**Combine with other courses**: No single course is going to teach you everything, so combine courses. I personally found the [Penguin Russian book](http://www.penguin.co.uk/nf/Book/BookDisplay/0,,9780140120417,00.html) worked as a great companion, solidifying concepts  that were hinted at in Pimsleur and offering more detailed explanations than Michel Thomas provides. Pimsleur claims learning grammar in this way can be destructive - maybe its my inquisitive nature, but I found my progress was only enriched by learning in this way.
-**Learn Cyrillic**: Pimsleur doesn't cover written Russian at all and Michel Thomas gives it a CD's worth of material at the end of the foundation course, but if you're ever planning on visiting Russia or following any of the countless courses that use Cyrillic, it's a useful skill to put some time into.
+* **Revise in your down-time**: More important for Pimsleur with its heavy reliance on having the last unit's material fresh in your mind, but you should look for a way to quickly review your words for when you inevitably miss a day or two. I recommend taking the time to build up an Anki deck as you go, which allows you to practice in just a few minutes every day. It's worth noting that MT _explicitly_ advises against this, citing it's mantra of never worrying about recall, which may be a reasonable approach during the course itself, but in the long term, you're probably going to want to retain your knowledge without having to revisit the whole course.
+* **Combine with other courses**: No single course is going to teach you everything, so combine courses. I personally found the [Penguin Russian book](http://www.penguin.co.uk/nf/Book/BookDisplay/0,,9780140120417,00.html) worked as a great companion, solidifying concepts  that were hinted at in Pimsleur and offering more detailed explanations than Michel Thomas provides. Pimsleur claims learning grammar in this way can be destructive - maybe its my inquisitive nature, but I found my progress was only enriched by learning in this way.
+* **Learn Cyrillic**: Pimsleur doesn't cover written Russian at all and Michel Thomas gives it a CD's worth of material at the end of the foundation course, but if you're ever planning on visiting Russia or following any of the countless courses that use Cyrillic, it's a useful skill to put some time into.
 
-### Final Words
+## Final Words
 
 To start with, I found Pimsleur hugely valuable to me - more than anything else, it built my confidence to use the language fluidly. Its not perfect though, it doesn't cover as much as you might expect for a 15 hour course and the pace can sometimes seem frustratingly slow. For someone beginning at Russian who is willing to devote 30 minutes a day to it, I can recommend Pimsleur Russian.
 

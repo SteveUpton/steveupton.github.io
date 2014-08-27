@@ -31,7 +31,7 @@ I've also been putting a little time into basic Mandarin, following exactly the 
 
 The final batch of cards I added to my Anki deck mostly consisted of the last few 'essential' words - after adding them to my Anki deck, I spent the rest of the month simply working through them.
 
-###  Progress so far
+##  Progress so far
 
 As I write this it is April 2nd and I will be flying to Russia in 5 days. I have stopped adding new cards to my Anki deck at this point.
 

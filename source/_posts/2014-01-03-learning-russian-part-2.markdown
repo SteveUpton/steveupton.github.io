@@ -44,7 +44,7 @@ A good chunk of December was focused on wrapping up the Michel Thomas Vocabulary
 
 My hope is that once I've gotten confident with the the content so far, plus the cases and prepositions, I should be in a good position to focus on 'simply' growing my vocabulary without spending as much time learning new grammatical rules. This isn't to say I'll just be adding words to my Anki deck from now on, but that I can also move onto more 'advanced' and domain specific material that doesn't need to introduce the basics.
 
-### Current Progress
+## Current Progress
 
 **Speaking**: I'm continuing to gain confidence speaking, finding myself able to construct increasingly complicated sentences (such as summarising the last few years of my life, explaining dietary requirements etc.) as well as rapidly formulate Russian versions of short, everyday phrases. I really feel like I've made big steps in understanding the language enough to use it confidently and my focus now needs to be on expanding my vocabulary.
 
