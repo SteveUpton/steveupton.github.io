@@ -7,7 +7,7 @@ categories:
 tags: language, russian
 ---
 
-More updates on my efforts to learn Russian. Check out [part 1]({% post_url 2013-09-24-learning-russian-part-1 %}) here.
+More updates on my efforts to learn Russian between September and December. Check out [part 1]({% post_url 2013-09-24-learning-russian-part-1 %}) here.
 
 <!-- more -->
 

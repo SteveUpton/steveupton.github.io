@@ -7,7 +7,7 @@ categories:
 tags: language, russian
 ---
 
-Final update on my Russian learning before I jet off to Russia. Check out [part 1]({% post_url 2013-09-24-learning-russian-part-1 %}) and [part 2]({% post_url 2014-01-03-learning-russian-part-2 %}).
+Final update on my Russian learning before I jet off to Russia. Check out [part 1]({% post_url 2013-09-24-learning-russian-part-1 %}) and [part 2]({% post_url 2014-01-03-learning-russian-part-2 %}). This post covers January to March.
 
 <!-- more -->
 
@@ -31,7 +31,7 @@ I've also been putting a little time into basic Mandarin, following exactly the 
 
 The final batch of cards I added to my Anki deck mostly consisted of the last few 'essential' words - after adding them to my Anki deck, I spent the rest of the month simply working through them.
 
-##  Progress so far
+##  Current Progress
 
 As I write this it is April 2nd and I will be flying to Russia in 5 days. I have stopped adding new cards to my Anki deck at this point.
 

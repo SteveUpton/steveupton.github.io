@@ -13,11 +13,12 @@ If you've ever looked at language courses, the chances are you've run across The
 
 For reference, I followed the courses in this order:
 
-Pimsleur Speak and Read Essential Russian 1 (15 hours)
-Michel Thomas Foundation Russian
-Michel Thomas Advanced Russian
-Michel Thomas Russian Vocabulary
-You can read more about my attempts to learn Russian here.
+* Pimsleur Speak and Read Essential Russian 1 (15 hours)
+* Michel Thomas Foundation Russian
+* Michel Thomas Advanced Russian
+* Michel Thomas Russian Vocabulary
+
+You can read more about my attempts to learn Russian [here]({% post_url 2013-09-24-learning-russian-part-1 %}), and [here]({% post_url 2014-01-03-learning-russian-part-2 %}) and [here]({% post_url 2014-04-02-learning-russian-part-3 %}).
 
 ## Course Descriptions
 
@@ -43,7 +44,7 @@ First off, a few things that both courses do well. The most important point is t
 
 Both courses also follow a similar philosophy of shielding you from jargon and lengthy explanations (at least early on) of grammatical rules, focusing instead on building your confidence before introducing more advanced concepts. It is in the introduction of advanced concepts however, that I saw the divergence between the courses, and also where I found myself gravitating towards Michel Thomas's approach.
 
-## The differences
+## The Differences
 
 There were a few aspects of the Michel Thomas that initially caused it to gain favour with me, the most obvious being that it covers much more content in a given length of time. Importantly though, its tone is more relaxed and the format is more suited to listening in small chunks (I listened while cooking or walking to work), which fitted my schedule much better than Pimsleur.
 
