@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Learning Russian - Part 1"
+title: "Learning Russian: Part 1"
 date: 2013-09-24 14:27:00
 comments: true
 categories:
