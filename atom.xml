@@ -4,7 +4,7 @@
   <title><![CDATA[The continuing adventures of Steve]]></title>
   <link href="http://SteveUpton.github.io/atom.xml" rel="self"/>
   <link href="http://SteveUpton.github.io/"/>
-  <updated>2015-04-05T15:33:31+01:00</updated>
+  <updated>2015-04-07T21:53:10+01:00</updated>
   <id>http://SteveUpton.github.io/</id>
   <author>
     <name><![CDATA[Steve Upton]]></name>
@@ -81,7 +81,7 @@ SELECT cdb_cartodbfytable(&#39;yb_linestring&#39;);
 <iframe width='100%' height='520' frameborder='0' src='http://steveupton.cartodb.com/viz/00fbf57c-db93-11e4-a11d-0e9d821ea90d/embed_map?center=[40.415,-3.70]&zoom=15' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
 
-<p>Both trackers failed to register my trip from Paris to Madrid, though Google did capture my 2 hour stop in Barcelona where I used McDonalds for the only thing they&rsquo;re good for - free toilets and Wifi. Similar story to Paris here, with Google edging out slightly as it grabbed my position indoors on a few occasions.</p>
+<p>Both trackers failed to register my trip from Paris to Madrid, though Google did capture my 2 hour stop in Barcelona where I used McDonalds for the only thing they&rsquo;re good for - free toilets and Wifi. Similar story to Paris here, with Google edging out slightly as it grabbed my position indoors on a few occasions, such as in my hostel, which you can clearly see on the Google track.</p>
 
 <h2>Morocco</h2>
 
@@ -111,7 +111,7 @@ SELECT cdb_cartodbfytable(&#39;yb_linestring&#39;);
 <p>So which should you use?</p>
 
 <ul>
-<li><em>Want detailed tracks of your movement around cities?</em> It&rsquo;s close, but Google wins here - their data, supplemented by Wifi and cell towers, tends to give greater detail with greater reliability than the YB3.</li>
+<li><em>Want detailed tracks of your movement around cities?</em> It&rsquo;s close, but Google wins here - their data, supplemented by Wifi and cell towers, tends to give greater detail with greater reliability than the YB3, especially indoors.</li>
 <li><em>Want detailed tracks of your movement outside of cities?</em> Probably a YB3 - outside, away from cell towers or Wifi, it was more reliable.</li>
 <li><em>Want your friends to virtually stalk your movements in real time?</em> YB3 here, obviously.</li>
 </ul>
@@ -245,7 +245,7 @@ SELECT cdb_cartodbfytable(&#39;yb_linestring&#39;);
 
 <p><img src="http://SteveUpton.github.io/images/posts/witg-day7.jpg"></p>
 
-<p>I wake in Omsk but do not stir. I rise at 7 (which the time zone then makes 8) to steppes, marshes and later, decayed industry. Less snow, but much frozen land and swamp between here and Novosibirsk, which we arrive at around 2:20. Old lady smiles and says &ldquo;goodbye&rdquo;, the only English I have heard from her. I have ice cream at the station and talk with 2 Swiss backpackers from the next куре. A large group joins our compartment and we begin to drink. One has an Aldo Raine scar. They are either talking about crime or farming. No, it&rsquo;s farming. Sergey Raibin shares his eggs with me. Sergey Raibin is very insistent that I remember his name. Sergey Raibin tries my cider. He had never seen or drank cider before. He does not like it. Pavel remembers my insulin. We all teach eachother swear words. Great time. They leave at Krasnoyarsk. It is quiet now. I am very drunk.</p>
+<p>I wake in Omsk but do not stir. I rise at 7 (which the time zone then makes 8) to steppes, marshes and later, decayed industry. Less snow, but much frozen land and swamp between here and Novosibirsk, which we arrive at around 2:20. Old lady smiles and says &ldquo;goodbye&rdquo;, the only English I have heard from her. I have ice cream at the station and talk with 2 Swiss backpackers from the next купе. A large group joins our compartment and we begin to drink. One has an Aldo Raine scar. They are either talking about crime or farming. No, it&rsquo;s farming. Sergey Raibin shares his eggs with me. Sergey Raibin is very insistent that I remember his name. Sergey Raibin tries my cider. He had never seen or drank cider before. He does not like it. Pavel remembers my insulin. We all teach eachother swear words. Great time. They leave at Krasnoyarsk. It is quiet now. I am very drunk.</p>
 
 <h2>Day 8</h2>
 
