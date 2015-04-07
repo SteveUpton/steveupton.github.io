@@ -51,7 +51,7 @@ Here we see the first instance of Google's location bug - jumping locations. Acc
 
 <iframe width='100%' height='520' frameborder='0' src='http://steveupton.cartodb.com/viz/00fbf57c-db93-11e4-a11d-0e9d821ea90d/embed_map?center=[40.415,-3.70]&zoom=15' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
-Both trackers failed to register my trip from Paris to Madrid, though Google did capture my 2 hour stop in Barcelona where I used McDonalds for the only thing they're good for - free toilets and Wifi. Similar story to Paris here, with Google edging out slightly as it grabbed my position indoors on a few occasions.
+Both trackers failed to register my trip from Paris to Madrid, though Google did capture my 2 hour stop in Barcelona where I used McDonalds for the only thing they're good for - free toilets and Wifi. Similar story to Paris here, with Google edging out slightly as it grabbed my position indoors on a few occasions, such as in my hostel, which you can clearly see on the Google track.
 
 ## Morocco
 
@@ -79,7 +79,7 @@ I was a little disappointed with the YB3's failure to connect for the Paris -> M
 
 So which should you use?
 
-* *Want detailed tracks of your movement around cities?* It's close, but Google wins here - their data, supplemented by Wifi and cell towers, tends to give greater detail with greater reliability than the YB3.
+* *Want detailed tracks of your movement around cities?* It's close, but Google wins here - their data, supplemented by Wifi and cell towers, tends to give greater detail with greater reliability than the YB3, especially indoors.
 * *Want detailed tracks of your movement outside of cities?* Probably a YB3 - outside, away from cell towers or Wifi, it was more reliable.
 * *Want your friends to virtually stalk your movements in real time?* YB3 here, obviously.
 
