@@ -1,0 +1,524 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Mapping your visited countries - The continuing adventures of Steve</title>
+  <meta name="author" content="Steve Upton">
+
+  
+  <meta name="description" content="There are loads of web-pages that&rsquo;ll helpfully track your travel progress around the world, displaying simple a choropleth maps. They&rsquo;re &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://SteveUpton.github.io/blog/2016/04/12/visited-countries">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="The continuing adventures of Steve" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet" type="text/css">
+<!--- MathJax Configuration -->
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+</head>
+
+<body   class="collapse-sidebar sidebar-footer" >
+  <header role="banner"><hgroup>
+  <h1><a href="/">The continuing adventures of Steve</a></h1>
+  
+    <h2>Sometimes I write things</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscribe" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS" target="_blank"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewbox="0 0 100 100"><path class="social" d="M 13.310204,73.332654 C 5.967347,73.332654 0,79.322448 0,86.621428 c 0,7.338776 5.967347,13.262246 13.310204,13.262246 7.370408,0 13.328572,-5.92245 13.328572,-13.262246 0,-7.29898 -5.958164,-13.288774 -13.328572,-13.288774 z M 0.01530612,33.978572 V 53.143878 C 12.493878,53.143878 24.229592,58.02347 33.068368,66.865306 41.894898,75.685714 46.767346,87.47449 46.767346,100 h 19.25 C 66.017346,63.592858 36.4,33.979592 0.01530612,33.978572 l 0,0 z M 0.03877552,0 V 19.17449 C 44.54796,19.17551 80.77551,55.437756 80.77551,100 H 100 C 100,44.87653 55.15102,0 0.03877552,0 z"></path></svg></a></li>
+  
+</ul>
+  
+  
+  
+  
+  
+<ul class="subscribe">
+  <li><a href="https://github.com/SteveUpton" rel="subscribe-github" title="@SteveUpton on GitHub" target="_blank"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewbox="0 0 100 100"><path class="social" d="M 50,0 C 22.385714,0 0,22.385714 0,50 0,77.614286 22.385714,100 50,100 77.614286,100 100,77.614286 100,50 100,22.385714 77.614286,0 50,0 z m 29.692858,79.692858 c -3.859184,3.859182 -8.351022,6.887754 -13.35,9.00306 -1.27041,0.536736 -2.560204,1.009184 -3.867348,1.415306 v -7.493878 c 0,-3.938774 -1.35102,-6.835714 -4.053062,-8.690816 1.692858,-0.163264 3.24694,-0.390816 4.663266,-0.683672 1.416326,-0.292858 2.913266,-0.716328 4.491838,-1.27041 1.57857,-0.55408 2.994896,-1.213264 4.247958,-1.97755 1.253062,-0.765306 2.458164,-1.758164 3.613266,-2.978572 1.155102,-1.220408 2.12449,-2.604082 2.905102,-4.15 0.780612,-1.545918 1.4,-3.40204 1.855102,-5.566326 0.455102,-2.164286 0.683674,-4.54898 0.683674,-7.153062 0,-5.045918 -1.643878,-9.341836 -4.931634,-12.890816 C 77.44796,33.35 77.285714,29.10204 75.463266,24.512244 l -1.22143,-0.145918 c -0.845918,-0.09796 -2.368366,0.260204 -4.565306,1.07449 -2.196938,0.814286 -4.663264,2.14796 -7.396938,4.004082 -3.87449,-1.07449 -7.893878,-1.611224 -12.061224,-1.611224 -4.19898,0 -8.203062,0.536734 -12.012246,1.611224 -1.72449,-1.17245 -3.361224,-2.139796 -4.907142,-2.905102 C 31.753062,25.77449 30.516326,25.254082 29.587756,24.97653 28.660204,24.7 27.79796,24.528572 27,24.463266 c -0.79796,-0.0653 -1.310204,-0.08062 -1.537756,-0.04898 -0.22755,0.03164 -0.390816,0.0653 -0.487754,0.09796 -1.82347,4.62245 -1.985714,8.87143 -0.487756,12.743878 -3.287754,3.54796 -4.931632,7.844898 -4.931632,12.890816 0,2.604082 0.227552,4.988776 0.683674,7.153062 0.456122,2.164286 1.07449,4.020408 1.855102,5.566326 0.780612,1.545918 1.75,2.929592 2.905102,4.15 1.155102,1.220408 2.360204,2.213266 3.613264,2.978572 1.253062,0.766326 2.669388,1.42449 4.24796,1.97755 1.578572,0.554082 3.07551,0.976532 4.491836,1.27041 1.416328,0.292856 2.970408,0.521428 4.663266,0.683672 -2.669388,1.82347 -4.004082,4.720408 -4.004082,8.690816 v 7.639796 C 36.536734,89.818368 35.083674,89.3 33.656122,88.695918 c -4.99898,-2.115306 -9.490816,-5.143878 -13.35,-9.00306 -3.859184,-3.859184 -6.887754,-8.351022 -9.00306,-13.35 C 9.1163263,61.171428 8.0071428,55.67347 8.0071428,50 c 0,-5.67347 1.1091835,-11.171428 3.2969392,-16.342858 2.115306,-4.998978 5.143878,-9.490816 9.00306,-13.35 3.859184,-3.859182 8.351022,-6.887754 13.35,-9.00306 C 38.828572,9.1163266 44.32653,8.0071428 50,8.0071428 c 5.67347,0 11.171428,1.1091838 16.342858,3.2969392 5,2.115306 9.490816,5.143878 13.35,9.00306 3.859182,3.859184 6.887754,8.351022 9.00306,13.35 2.186736,5.17245 3.295918,10.67041 3.295918,16.342858 0,5.672448 -1.109182,11.171428 -3.296938,16.342858 -2.115306,4.998978 -5.143878,9.490816 -9.00204,13.35 l 0,0 z"></path></svg></a></li>
+</ul>
+  
+  
+  
+<ul class="subscribe">
+  <li><a href="https://twitter.com/Steve_Upton" rel="subscribe-twitter" title="@Steve_Upton on Twitter" target="_blank"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 512 512"><path class="social" d="M0.001,334.932c33.327,30.816,118.891,59.981,188.517-8.271c-12.52,1.955-22.972-0.416-30.913-8.269
+  c-7.531-7.465-7.945-15.182-3.914-22.202c3.275-5.725,10.184-9.741,16.977-13.934c-12.323,2.285-22.829,1.095-32.218-3.706
+  c-12.604-6.444-24.863-13.228-28.3-27.207c7.71-8.112,16.28-15.359,34.831-12.627c-17.45-5.83-33.087-13.429-44.41-24.815
+  c-11.028-11.091-12.163-18.302-13.932-26.996c9.632-3.567,19.688-5.421,30.478-4.353c-24.397-12.476-34.757-29.63-40.487-48.325
+  c-1.731-5.652-2.044-11.03-1.31-16.545c98.826,37.305,145.11,64.109,170.662,89.251c11.496-30.589,38.3-99.868,78.371-123.646
+  c0.191,3.77-1.309,7.837-4.357,12.189c11.863-6.609,21.125-17.188,37.445-16.98c-1.879,7.723-7.279,13.904-17.85,17.854
+  c10.662-4.084,21.463-7.545,32.65-9.578c10.375-1.881,10.229,6.304,4.355,10.444c-11.916,8.412-24.578,9.456-37.006,13.498
+  c38.105,0.949,69.266,18.994,93.604,58.343c8.088,13.074,13.52,26.149,14.807,40.487c16.254,4.563,32.426,5.494,48.76,2.61
+  c4.475-0.796,8.645-1.63,12.627-3.482c-6.354,9.529-13.686,17.356-23.947,20.899c-9.811,3.387-19.637,6.688-30.473,6.968
+  c17.641,6.675,37.082,7.045,57.033,5.659c-24.402,23.486-43.08,22.922-61.824,22.642c-8.221,34.703-25.025,69.315-60.52,101.005
+  c-46.559,41.569-96.678,61.397-148.457,65.742c-48.552,4.07-95.488,3.512-146.726-20.464
+  C56.486,393.349,24.648,368.884,0.001,334.932L0.001,334.932z"/></svg></a></li>
+</ul>
+  
+  
+<ul class="subscribe">
+  <li><a href="https://linkedin.com/in/stevejupton" rel="subscribe-linkedin" title="Steve Upton on LinkedIn" target="_blank"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 731 1000"><path class="social" d="M158.75 865l-156.25 0l0 -521.25l156.25 0l0 521.25zm393.75 -505q87.5 0 133.125 56.25t45.625 153.75l0 295l-156.25 0l0 -278.75q0 -108.75 -76.25 -108.75 -61.25 0 -80 61.25l0 326.25l-156.25 0q2.5 -468.75 0 -521.25l123.75 0l10 103.75l2.5 0q53.75 -87.5 153.75 -87.5zm-552.5 -146.25q0 -78.75 81.25 -78.75 80 0 80 78.75 0 77.5 -80 77.5 -81.25 0 -81.25 -77.5z"/></svg></a></li>
+</ul>
+  
+  
+<ul class="subscribe">
+  <li><a href="http://stackoverflow.com/users/1214161" rel="subscribe-stackoverflow" title="Steve Upton on StackOverflow" target="_blank"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 64 64"><g
+     id="layer1" class="social">
+    <path
+       d="m 9.3049611,36.847632 4.4013079,0.04316 -0.153442,19.598393 29.291259,0 0,-19.527506 4.637782,0 0,24.287331 -38.2006795,0 0.023777,-24.401371 z"
+       id="path2830"
+       style="fill-opacity:1;stroke:none"/>
+    <rect
+       width="22.944817"
+       height="4.881876"
+       x="16.481951"
+       y="48.434078"
+       id="rect3604"
+       style="fill-opacity:1;stroke:none" />
+    <rect
+       width="23.066864"
+       height="5.0039229"
+       x="20.749949"
+       y="37.830307"
+       transform="matrix(0.9953749,0.09606666,-0.09606666,0.9953749,0,0)"
+       id="rect3606"
+       style="fill-opacity:1;stroke:none" />
+    <rect
+       width="23.066864"
+       height="5.0039229"
+       x="26.472515"
+       y="23.401554"
+       transform="matrix(0.96240291,0.27162592,-0.27162592,0.96240291,0,0)"
+       id="rect3606-1"
+       style="fill-opacity:1;stroke:none" />
+    <rect
+       width="23.066864"
+       height="5.0039229"
+       x="30.528769"
+       y="3.1535864"
+       transform="matrix(0.85597805,0.51701216,-0.51701216,0.85597805,0,0)"
+       id="rect3606-1-3"
+       style="fill-opacity:1;stroke:none" />
+    <rect
+       width="23.066864"
+       height="5.0039229"
+       x="27.191883"
+       y="-24.475019"
+       transform="matrix(0.58242689,0.81288309,-0.81288309,0.58242689,0,0)"
+       id="rect3606-1-3-7"
+       style="fill-opacity:1;stroke:none" />
+    <rect
+       width="23.066864"
+       height="5.0039229"
+       x="11.174569"
+       y="-50.183693"
+       transform="matrix(0.16480989,0.98632535,-0.98632535,0.16480989,0,0)"
+       id="rect3606-1-3-7-6"
+       style="fill-opacity:1;stroke:none" />
+  </g></svg></a></li>
+</ul>
+  
+  
+  
+  
+    
+      <form action="https://www.google.com/search" method="get">
+        <fieldset role="search">
+          <input type="hidden" name="sitesearch" value="SteveUpton.github.io" />
+    
+          <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+        </fieldset>
+      </form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      
+        <h1 class="entry-title">Mapping your visited countries</h1>
+      
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-04-12T23:40:00+01:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>11:40 pm</span></time>
+        
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>There are loads of web-pages that&rsquo;ll helpfully track your travel progress around the world, displaying simple a <a href="https://en.wikipedia.org/wiki/Choropleth_map">choropleth maps</a>. They&rsquo;re nice and all, but why not make your own?</p>
+
+<!-- more -->
+
+
+<h1>Why?</h1>
+
+<p><img src="/images/posts/map-alternatives.jpg" title="A selection of ready made maps" ></p>
+
+<p>Despite lots of ready-made alternatives, there are good reasons to roll-your-own map, including:</p>
+
+<ul>
+<li>Dissatisfaction with existing maps</li>
+<li>Desire to tinker</li>
+<li>You haven&rsquo;t written enough SQL today</li>
+<li>Stubbornness</li>
+</ul>
+
+
+<p>Assuming at least one of those applies to you, let&rsquo;s go.</p>
+
+<h1>How?</h1>
+
+<p>I chose to use <a href="https://cartodb.com">CartoDB</a> because it&rsquo;s powerful, easy to use and free for projects like this (as long as you don&rsquo;t your data to be private or more than 4 layers, you&rsquo;re set). So sign up or sign in and let&rsquo;s get started.</p>
+
+<h2>The data(set)</h2>
+
+<p>The first thing we need to do is get a data describing country borders, so we can fill in the ones we&rsquo;ve visited. Luckily, CartoDB provides a library of external datasets for situations just like this. From your dashboard, go to your datasets and click New Dataset. From there, select the Data library tab and search for &lsquo;borders&rsquo;.</p>
+
+<p><img class="right" src="/images/posts/map-border-datasets.png" title="The available world borders datasets" ></p>
+
+<p>We&rsquo;ve got 2 options, but don&rsquo;t really need the high definition borders and they&rsquo;ll make the map slower to load, so select <code>World borders</code> to continue. After a few seconds, you&rsquo;ll have imported the data and have a new dataset called <code>world_borders</code>. You&rsquo;ll need to turn off syncing, (as it is not possible to update data that is set to sync with an external dataset) by clicking the flashing notification in the top left corner and selecting <code>never</code>. Finally, let&rsquo;s rename our dataset from <code>world_borders</code> to <code>visited_countries_dataset</code> by clicking on the name in the top left.</p>
+
+<p><img src="/images/posts/map-new-dataset.png" title="The new dataset" ></p>
+
+<p>OK, so now we have a dataset called <code>visited_countries_dataset</code> that describes the borders of every country in the world. Good start. Click on the map view at the top of the page to see a visual representation of this.</p>
+
+<p><img class="center" src="/images/posts/map-all-shaded.png" title="Map with all countries shaded" ></p>
+
+<p>Every country is shaded. Obviously, we only want to shade the countries we&rsquo;ve visited, so we&rsquo;ll need to add that data to the dataset. Easy. Click on the SQL button on the right hand side of the screen to open the SQL query editor and paste in the following:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">visited_countries_dataset</span>
+</span><span class='line'><span class="k">ADD</span> <span class="n">visited</span> <span class="nb">boolean</span>
+</span><span class='line'><span class="k">DEFAULT</span> <span class="k">false</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>What we&rsquo;re doing is adding a column called visited of type boolean with a default value of false (given that you probably haven&rsquo;t visited every country in the world). In some cases, I&rsquo;ve found that the new column doesn&rsquo;t appear, <a href="https://github.com/CartoDB/cartodb/issues/5291">which seems to be related to a (caching?) bug</a>. If that happens, try deleting the dataset and starting again - I haven&rsquo;t found another solution to that issue, but we aren&rsquo;t too far in, so it&rsquo;s not a big deal.</p>
+
+<p>The next step is manual - we need to update the data to mark the one&rsquo;s we&rsquo;ve visited. Simply scroll to the country you&rsquo;ve visited, double click the false in the visited column and select true (to make things easier, you can sort by name by clicking in the header of the name column). Once that&rsquo;s done, we can look at displaying this data on a map.</p>
+
+<h2>The map</h2>
+
+<p>If you click the map view at the top of the page while viewing your dataset, you&rsquo;ll see that nothing has changed. That&rsquo;s because we haven&rsquo;t told the visualization to do anything based on whether or not you have visited the country (ie. whether or not visited is true). From here, we have a few options (all pretty simple), but I&rsquo;ve decided to go with the most extensible option. If you&rsquo;re impatient, just click wizards on the right edge of the screen, then click category and select visited as the column and you&rsquo;re done - congrats. If you&rsquo;re willing to put in a whole 2 minutes of work, come with me.</p>
+
+<p>We&rsquo;re going to create a separate map to display our visited countries. The map collects the data and defines the styling while the data remains data - it&rsquo;s called <a href="https://en.wikipedia.org/wiki/Separation_of_presentation_and_content">Separation of presentation and content</a>, and is a Good Thing.</p>
+
+<p>Back out into your dashboard, switch to your Maps view and click New Map, then select the <code>visited_countries_dataset</code> and click Create Map - this will auto-create a layer (view) based on that dataset. Next, we&rsquo;ll need to tell the map to only shade visited countries, so click the SQL tab on the right edge of the screen to see the following:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">visited_countries_dataset</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This simply creates a view from your dataset by SELECTing from that dataset. One way of shading the visited countries is to simply filter this dataset based on that:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">visited_countries_dataset</span>
+</span><span class='line'><span class="k">WHERE</span> <span class="n">visited</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You can achieve the same effect using a GUI by clicking the filter tab - either works just as well. Personally, I prefer to define styling rules as this allows us to do things with the un-visited countries as well (filtering them simply removes them from the view entirely). Click the clear view button in the SQL editor, then switch to the CSS tab and replace the contents with the following:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="nf">#visited_countries_dataset</span> <span class="o">[</span><span class="nt">visited</span><span class="o">=</span><span class="nt">true</span><span class="o">]</span> <span class="p">{</span>
+</span><span class='line'>  <span class="n">polygon</span><span class="o">-</span><span class="n">fill</span><span class="o">:</span> <span class="m">#FF6600</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">polygon</span><span class="o">-</span><span class="k">opacity</span><span class="o">:</span> <span class="m">0</span><span class="o">.</span><span class="m">7</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">line</span><span class="o">-</span><span class="k">color</span><span class="o">:</span> <span class="m">#FFF</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">line</span><span class="o">-</span><span class="k">width</span><span class="o">:</span> <span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">line</span><span class="o">-</span><span class="k">opacity</span><span class="o">:</span> <span class="m">1</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>All we&rsquo;re doing is adding the <code>[visited=true]</code> constraint so we only apply the default styling where visited is true, leaving the remaining (visited=false) countries un-shaded. If you wanted to define another style for the unvisited countries, you could simply add another style with the constraint <code>[visited=false]</code>. You can also achieve the same effect using a GUI in the wizard tab. Nice that.</p>
+
+<p><img class="right" src="/images/posts/map-options.png" title="The base map and display options on the map" ></p>
+
+<p>You can tweak the styling using CartoCSS or in the wizard tab. The infowindow tab allows you to set what appears when you hover or click on each country - you could have the name of the country or even the date you first visited it if you&rsquo;re willing plug in the data like we did above. The appearance of the map and which controls appear on it can be changed by messing around with the buttons in the bottom left corner of the map. Finally, name your map something memorable - if you send people a link to a full screen version of your map, this is what they&rsquo;ll see in their title bar. I went with Steve&rsquo;s visited countries. When everything is tweaked to your liking, simply click the Publish button for options. Here&rsquo;s an embedded version of my map:</p>
+
+<iframe width="100%" height="520" frameborder="0" src="https://steveupton.cartodb.com/viz/c007b6cc-f735-11e5-9ccc-0ecd1babdde5/embed_map?center=[48,15]&zoom=4" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
+
+<p>Click the visible layers button in the top right to switch between different visualisations of visited US states, which are described in detail below.</p>
+
+<h2>Extras</h2>
+
+<p>The above build is what I&rsquo;m using, but it&rsquo;s easy to extend and tweak. Let&rsquo;s look at a few options to customize or extract data from the map.</p>
+
+<h3>Stats</h3>
+
+<p>Most maps offer some stats to display; visited countries count, percentage of world visited etc. It&rsquo;s quick and easy to calculate these sorts of things with SQL:</p>
+
+<figure class='code'><figcaption><span>Calculate number of visited countries</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span>
+</span><span class='line'><span class="k">FROM</span> <span class="n">visited_countries_dataset</span>
+</span><span class='line'><span class="k">WHERE</span> <span class="n">visited</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>Calculate percentage of countries visited</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="k">SELECT</span> <span class="k">CAST</span><span class="p">(</span><span class="n">visited</span><span class="p">.</span><span class="n">num</span> <span class="k">AS</span> <span class="nb">DECIMAL</span><span class="p">)</span> <span class="o">/</span> <span class="n">total</span><span class="p">.</span><span class="n">num</span>
+</span><span class='line'><span class="k">FROM</span>
+</span><span class='line'><span class="p">(</span>
+</span><span class='line'>  <span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">AS</span> <span class="n">num</span>
+</span><span class='line'>  <span class="k">FROM</span> <span class="n">visited_countries_dataset</span>
+</span><span class='line'><span class="p">)</span> <span class="n">total</span>
+</span><span class='line'><span class="k">JOIN</span>
+</span><span class='line'><span class="p">(</span>
+</span><span class='line'>  <span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">AS</span> <span class="n">num</span>
+</span><span class='line'>  <span class="k">FROM</span> <span class="n">visited_countries_dataset</span>
+</span><span class='line'>  <span class="k">WHERE</span> <span class="n">visited</span>
+</span><span class='line'><span class="p">)</span> <span class="n">visited</span>
+</span><span class='line'><span class="k">ON</span> <span class="mi">1</span><span class="o">=</span><span class="mi">1</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>Calculate percentage world land area visited</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="k">SELECT</span> <span class="k">CAST</span><span class="p">(</span><span class="n">visited</span><span class="p">.</span><span class="n">area</span> <span class="k">AS</span> <span class="nb">DECIMAL</span><span class="p">)</span> <span class="o">/</span> <span class="n">total</span><span class="p">.</span><span class="n">area</span>
+</span><span class='line'><span class="k">FROM</span>
+</span><span class='line'><span class="p">(</span>
+</span><span class='line'>  <span class="k">SELECT</span> <span class="k">SUM</span><span class="p">(</span><span class="n">area</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">AS</span> <span class="n">area</span>
+</span><span class='line'>  <span class="k">FROM</span> <span class="n">visited_countries_dataset</span>
+</span><span class='line'><span class="p">)</span> <span class="n">total</span>
+</span><span class='line'><span class="k">JOIN</span>
+</span><span class='line'><span class="p">(</span>
+</span><span class='line'>  <span class="k">SELECT</span> <span class="k">SUM</span><span class="p">(</span><span class="n">area</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">AS</span> <span class="n">area</span>
+</span><span class='line'>  <span class="k">FROM</span> <span class="n">visited_countries_dataset</span>
+</span><span class='line'>  <span class="k">WHERE</span> <span class="n">visited</span>
+</span><span class='line'><span class="p">)</span> <span class="n">visited</span>
+</span><span class='line'><span class="k">ON</span> <span class="mi">1</span><span class="o">=</span><span class="mi">1</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>OK, technically, that last one calculates the percentage of world land area covered by the countries you&rsquo;ve visited, not really the area you <em>personally</em> have covered. The whole thing is silly, but I&rsquo;ve seen other maps (like <a href="http://www.mytravelmap.tk/">mytravelmap</a>) do this kinda calculation, so I put it here for comparison. Remember, <a href="http://www.goodreads.com/quotes/189690-a-journey-is-best-measured-in-friends-not-in-miles">measure your trip in people, not kilometers</a>.</p>
+
+<h3>Mark states individually</h3>
+
+<p>So far, we&rsquo;ve created a map of visited countries, but what if we want to get more specific and mark individual states or regions that we&rsquo;ve visited? Luckily, just as CartoDB provides datasets for country borders, it also provides state, region and county maps for lots of countries as well. For this example, we&rsquo;ll do US states, but you can apply this to any set of regions you can find in CartoDB&rsquo;s data library (or can find GeoJSON/KML to import).</p>
+
+<p>Hop back to your dashboard and create a new dataset from the dashboard, search the Data library for &lsquo;United states&rsquo; and select the dataset <code>USA states</code> to import it. As before, you&rsquo;ll need to turn off syncing, (optionally) rename it (I went with <code>visited_us_states_dataset</code>) before running the following SQL:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">visited_us_states_dataset</span>
+</span><span class='line'><span class="k">ADD</span> <span class="n">visited</span> <span class="nb">boolean</span>
+</span><span class='line'><span class="k">DEFAULT</span> <span class="k">false</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>As long as the table name is correct, you&rsquo;ll now have a <code>visited</code> column in your table. As before, fill it in manually to mark the states you&rsquo;ve visited. From here, we could create a separate map just and define styling options just as we did before, leaving the map looking something like this:</p>
+
+<p><img class="center" src="/images/posts/map-just-states.png" title="Map of the USA with just visited states shaded" ></p>
+
+<p>Alternatively, we could include this dataset as a layer in the map we created earlier, which gives us lots more options. Let&rsquo;s do that. Back on your original Visited Countries map (not the dataset), click the blue <code>+</code> button near the top right and select the <code>visited_us_states_dataset</code> we just created to create a layer from it. Then, simply define your styling as before so we only shade the visited states. If we displayed the map now, we&rsquo;d overlay both datasets on eachother, which kinda defeats the purpose of the exercise:</p>
+
+<p><img class="center" src="/images/posts/map-overlayed.png" title="Map of the USA with visited states shaded overlayed with the rest of the USA" ></p>
+
+<p>One option is to go back to the original <code>visited_countries_dataset</code> and mark the US as un-visited, which would solve the problem but break the stat queries from the previous section (the visited countries count would be off). The simplest solution would probably be to keep the USA marked as visited, but filter it out in the map view with some SQL:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">visited_countries_dataset</span>
+</span><span class='line'><span class="k">WHERE</span> <span class="n">name</span> <span class="k">NOT</span> <span class="k">LIKE</span> <span class="s1">&#39;United States&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Which would leave us with a map that looks something like:</p>
+
+<p><img class="center" src="/images/posts/map-states-and-countries.png" title="Map with visited US states shaded as well as Canada" ></p>
+
+<p>You could also mash both dataset into a single layer with a bit more SQL:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="p">(</span>
+</span><span class='line'> <span class="k">SELECT</span>
+</span><span class='line'>  <span class="n">cartodb_id</span><span class="p">,</span> <span class="n">the_geom_webmercator</span><span class="p">,</span> <span class="n">visited</span>
+</span><span class='line'> <span class="k">FROM</span>
+</span><span class='line'>  <span class="n">visited_countries_dataset</span>
+</span><span class='line'> <span class="k">WHERE</span>
+</span><span class='line'>  <span class="n">name</span> <span class="k">NOT</span> <span class="k">LIKE</span> <span class="s1">&#39;United States&#39;</span>
+</span><span class='line'><span class="p">)</span>
+</span><span class='line'><span class="k">UNION</span>
+</span><span class='line'><span class="p">(</span>
+</span><span class='line'> <span class="k">SELECT</span>
+</span><span class='line'>  <span class="n">cartodb_id</span><span class="p">,</span> <span class="n">the_geom_webmercator</span><span class="p">,</span> <span class="n">visited</span>
+</span><span class='line'> <span class="k">FROM</span>
+</span><span class='line'>  <span class="n">visited_us_states_dataset</span>
+</span><span class='line'><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This is necessarily lossy as the two datasets have different columns, but allows you to use your other layers freely - something I&rsquo;ll be looking at in a later post. That&rsquo;s enough for now, enjoy your maps.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+
+
+  <span class="byline author vcard">Authored by <span class="fn">
+  
+    Steve Upton
+  
+  </span></span>
+
+
+      
+
+
+
+
+<time class='entry-date' datetime='2016-04-12T23:40:00+01:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>11:40 pm</span></time>
+      
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2016/04/06/rtw-3/" title="Previous Post: Round the World 3: El Gringo va al Norte">&laquo; Round the World 3: El Gringo va al Norte</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+
+</div>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Mapping your visited countries</span> by <a xmlns:cc="http://creativecommons.org/ns#" href=/blog/2016/04/12/visited-countries/ property="cc:attributionName" rel="cc:attributionURL">Steve Upton</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br />
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a> | Themed with <a href="https://github.com/lucaslew/whitespace">Whitespace</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

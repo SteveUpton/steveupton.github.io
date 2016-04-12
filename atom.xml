@@ -4,7 +4,7 @@
   <title><![CDATA[The continuing adventures of Steve]]></title>
   <link href="http://SteveUpton.github.io/atom.xml" rel="self"/>
   <link href="http://SteveUpton.github.io/"/>
-  <updated>2016-04-09T18:10:18+01:00</updated>
+  <updated>2016-04-12T23:41:37+01:00</updated>
   <id>http://SteveUpton.github.io/</id>
   <author>
     <name><![CDATA[Steve Upton]]></name>
@@ -12,6 +12,281 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Mapping your visited countries]]></title>
+    <link href="http://SteveUpton.github.io/blog/2016/04/12/visited-countries/"/>
+    <updated>2016-04-12T23:40:00+01:00</updated>
+    <id>http://SteveUpton.github.io/blog/2016/04/12/visited-countries</id>
+    <content type="html"><![CDATA[<p>There are loads of web-pages that&rsquo;ll helpfully track your travel progress around the world, displaying simple a <a href="https://en.wikipedia.org/wiki/Choropleth_map">choropleth maps</a>. They&rsquo;re nice and all, but why not make your own?</p>
+
+<!-- more -->
+
+
+<h1>Why?</h1>
+
+<p><img src="http://SteveUpton.github.io/images/posts/map-alternatives.jpg" title="A selection of ready made maps" ></p>
+
+<p>Despite lots of ready-made alternatives, there are good reasons to roll-your-own map, including:</p>
+
+<ul>
+<li>Dissatisfaction with existing maps</li>
+<li>Desire to tinker</li>
+<li>You haven&rsquo;t written enough SQL today</li>
+<li>Stubbornness</li>
+</ul>
+
+
+<p>Assuming at least one of those applies to you, let&rsquo;s go.</p>
+
+<h1>How?</h1>
+
+<p>I chose to use <a href="https://cartodb.com">CartoDB</a> because it&rsquo;s powerful, easy to use and free for projects like this (as long as you don&rsquo;t your data to be private or more than 4 layers, you&rsquo;re set). So sign up or sign in and let&rsquo;s get started.</p>
+
+<h2>The data(set)</h2>
+
+<p>The first thing we need to do is get a data describing country borders, so we can fill in the ones we&rsquo;ve visited. Luckily, CartoDB provides a library of external datasets for situations just like this. From your dashboard, go to your datasets and click New Dataset. From there, select the Data library tab and search for &lsquo;borders&rsquo;.</p>
+
+<p><img class="right" src="http://SteveUpton.github.io/images/posts/map-border-datasets.png" title="The available world borders datasets" ></p>
+
+<p>We&rsquo;ve got 2 options, but don&rsquo;t really need the high definition borders and they&rsquo;ll make the map slower to load, so select <code>World borders</code> to continue. After a few seconds, you&rsquo;ll have imported the data and have a new dataset called <code>world_borders</code>. You&rsquo;ll need to turn off syncing, (as it is not possible to update data that is set to sync with an external dataset) by clicking the flashing notification in the top left corner and selecting <code>never</code>. Finally, let&rsquo;s rename our dataset from <code>world_borders</code> to <code>visited_countries_dataset</code> by clicking on the name in the top left.</p>
+
+<p><img src="http://SteveUpton.github.io/images/posts/map-new-dataset.png" title="The new dataset" ></p>
+
+<p>OK, so now we have a dataset called <code>visited_countries_dataset</code> that describes the borders of every country in the world. Good start. Click on the map view at the top of the page to see a visual representation of this.</p>
+
+<p><img class="center" src="http://SteveUpton.github.io/images/posts/map-all-shaded.png" title="Map with all countries shaded" ></p>
+
+<p>Every country is shaded. Obviously, we only want to shade the countries we&rsquo;ve visited, so we&rsquo;ll need to add that data to the dataset. Easy. Click on the SQL button on the right hand side of the screen to open the SQL query editor and paste in the following:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">visited_countries_dataset</span>
+</span><span class='line'><span class="k">ADD</span> <span class="n">visited</span> <span class="nb">boolean</span>
+</span><span class='line'><span class="k">DEFAULT</span> <span class="k">false</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>What we&rsquo;re doing is adding a column called visited of type boolean with a default value of false (given that you probably haven&rsquo;t visited every country in the world). In some cases, I&rsquo;ve found that the new column doesn&rsquo;t appear, <a href="https://github.com/CartoDB/cartodb/issues/5291">which seems to be related to a (caching?) bug</a>. If that happens, try deleting the dataset and starting again - I haven&rsquo;t found another solution to that issue, but we aren&rsquo;t too far in, so it&rsquo;s not a big deal.</p>
+
+<p>The next step is manual - we need to update the data to mark the one&rsquo;s we&rsquo;ve visited. Simply scroll to the country you&rsquo;ve visited, double click the false in the visited column and select true (to make things easier, you can sort by name by clicking in the header of the name column). Once that&rsquo;s done, we can look at displaying this data on a map.</p>
+
+<h2>The map</h2>
+
+<p>If you click the map view at the top of the page while viewing your dataset, you&rsquo;ll see that nothing has changed. That&rsquo;s because we haven&rsquo;t told the visualization to do anything based on whether or not you have visited the country (ie. whether or not visited is true). From here, we have a few options (all pretty simple), but I&rsquo;ve decided to go with the most extensible option. If you&rsquo;re impatient, just click wizards on the right edge of the screen, then click category and select visited as the column and you&rsquo;re done - congrats. If you&rsquo;re willing to put in a whole 2 minutes of work, come with me.</p>
+
+<p>We&rsquo;re going to create a separate map to display our visited countries. The map collects the data and defines the styling while the data remains data - it&rsquo;s called <a href="https://en.wikipedia.org/wiki/Separation_of_presentation_and_content">Separation of presentation and content</a>, and is a Good Thing.</p>
+
+<p>Back out into your dashboard, switch to your Maps view and click New Map, then select the <code>visited_countries_dataset</code> and click Create Map - this will auto-create a layer (view) based on that dataset. Next, we&rsquo;ll need to tell the map to only shade visited countries, so click the SQL tab on the right edge of the screen to see the following:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">visited_countries_dataset</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This simply creates a view from your dataset by SELECTing from that dataset. One way of shading the visited countries is to simply filter this dataset based on that:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">visited_countries_dataset</span>
+</span><span class='line'><span class="k">WHERE</span> <span class="n">visited</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You can achieve the same effect using a GUI by clicking the filter tab - either works just as well. Personally, I prefer to define styling rules as this allows us to do things with the un-visited countries as well (filtering them simply removes them from the view entirely). Click the clear view button in the SQL editor, then switch to the CSS tab and replace the contents with the following:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="nf">#visited_countries_dataset</span> <span class="o">[</span><span class="nt">visited</span><span class="o">=</span><span class="nt">true</span><span class="o">]</span> <span class="p">{</span>
+</span><span class='line'>  <span class="n">polygon</span><span class="o">-</span><span class="n">fill</span><span class="o">:</span> <span class="m">#FF6600</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">polygon</span><span class="o">-</span><span class="k">opacity</span><span class="o">:</span> <span class="m">0</span><span class="o">.</span><span class="m">7</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">line</span><span class="o">-</span><span class="k">color</span><span class="o">:</span> <span class="m">#FFF</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">line</span><span class="o">-</span><span class="k">width</span><span class="o">:</span> <span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">line</span><span class="o">-</span><span class="k">opacity</span><span class="o">:</span> <span class="m">1</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>All we&rsquo;re doing is adding the <code>[visited=true]</code> constraint so we only apply the default styling where visited is true, leaving the remaining (visited=false) countries un-shaded. If you wanted to define another style for the unvisited countries, you could simply add another style with the constraint <code>[visited=false]</code>. You can also achieve the same effect using a GUI in the wizard tab. Nice that.</p>
+
+<p><img class="right" src="http://SteveUpton.github.io/images/posts/map-options.png" title="The base map and display options on the map" ></p>
+
+<p>You can tweak the styling using CartoCSS or in the wizard tab. The infowindow tab allows you to set what appears when you hover or click on each country - you could have the name of the country or even the date you first visited it if you&rsquo;re willing plug in the data like we did above. The appearance of the map and which controls appear on it can be changed by messing around with the buttons in the bottom left corner of the map. Finally, name your map something memorable - if you send people a link to a full screen version of your map, this is what they&rsquo;ll see in their title bar. I went with Steve&rsquo;s visited countries. When everything is tweaked to your liking, simply click the Publish button for options. Here&rsquo;s an embedded version of my map:</p>
+
+<iframe width="100%" height="520" frameborder="0" src="https://steveupton.cartodb.com/viz/c007b6cc-f735-11e5-9ccc-0ecd1babdde5/embed_map?center=[48,15]&zoom=4" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
+
+<p>Click the visible layers button in the top right to switch between different visualisations of visited US states, which are described in detail below.</p>
+
+<h2>Extras</h2>
+
+<p>The above build is what I&rsquo;m using, but it&rsquo;s easy to extend and tweak. Let&rsquo;s look at a few options to customize or extract data from the map.</p>
+
+<h3>Stats</h3>
+
+<p>Most maps offer some stats to display; visited countries count, percentage of world visited etc. It&rsquo;s quick and easy to calculate these sorts of things with SQL:</p>
+
+<figure class='code'><figcaption><span>Calculate number of visited countries</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span>
+</span><span class='line'><span class="k">FROM</span> <span class="n">visited_countries_dataset</span>
+</span><span class='line'><span class="k">WHERE</span> <span class="n">visited</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>Calculate percentage of countries visited</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="k">SELECT</span> <span class="k">CAST</span><span class="p">(</span><span class="n">visited</span><span class="p">.</span><span class="n">num</span> <span class="k">AS</span> <span class="nb">DECIMAL</span><span class="p">)</span> <span class="o">/</span> <span class="n">total</span><span class="p">.</span><span class="n">num</span>
+</span><span class='line'><span class="k">FROM</span>
+</span><span class='line'><span class="p">(</span>
+</span><span class='line'>  <span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">AS</span> <span class="n">num</span>
+</span><span class='line'>  <span class="k">FROM</span> <span class="n">visited_countries_dataset</span>
+</span><span class='line'><span class="p">)</span> <span class="n">total</span>
+</span><span class='line'><span class="k">JOIN</span>
+</span><span class='line'><span class="p">(</span>
+</span><span class='line'>  <span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">AS</span> <span class="n">num</span>
+</span><span class='line'>  <span class="k">FROM</span> <span class="n">visited_countries_dataset</span>
+</span><span class='line'>  <span class="k">WHERE</span> <span class="n">visited</span>
+</span><span class='line'><span class="p">)</span> <span class="n">visited</span>
+</span><span class='line'><span class="k">ON</span> <span class="mi">1</span><span class="o">=</span><span class="mi">1</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>Calculate percentage world land area visited</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="k">SELECT</span> <span class="k">CAST</span><span class="p">(</span><span class="n">visited</span><span class="p">.</span><span class="n">area</span> <span class="k">AS</span> <span class="nb">DECIMAL</span><span class="p">)</span> <span class="o">/</span> <span class="n">total</span><span class="p">.</span><span class="n">area</span>
+</span><span class='line'><span class="k">FROM</span>
+</span><span class='line'><span class="p">(</span>
+</span><span class='line'>  <span class="k">SELECT</span> <span class="k">SUM</span><span class="p">(</span><span class="n">area</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">AS</span> <span class="n">area</span>
+</span><span class='line'>  <span class="k">FROM</span> <span class="n">visited_countries_dataset</span>
+</span><span class='line'><span class="p">)</span> <span class="n">total</span>
+</span><span class='line'><span class="k">JOIN</span>
+</span><span class='line'><span class="p">(</span>
+</span><span class='line'>  <span class="k">SELECT</span> <span class="k">SUM</span><span class="p">(</span><span class="n">area</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">AS</span> <span class="n">area</span>
+</span><span class='line'>  <span class="k">FROM</span> <span class="n">visited_countries_dataset</span>
+</span><span class='line'>  <span class="k">WHERE</span> <span class="n">visited</span>
+</span><span class='line'><span class="p">)</span> <span class="n">visited</span>
+</span><span class='line'><span class="k">ON</span> <span class="mi">1</span><span class="o">=</span><span class="mi">1</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>OK, technically, that last one calculates the percentage of world land area covered by the countries you&rsquo;ve visited, not really the area you <em>personally</em> have covered. The whole thing is silly, but I&rsquo;ve seen other maps (like <a href="http://www.mytravelmap.tk/">mytravelmap</a>) do this kinda calculation, so I put it here for comparison. Remember, <a href="http://www.goodreads.com/quotes/189690-a-journey-is-best-measured-in-friends-not-in-miles">measure your trip in people, not kilometers</a>.</p>
+
+<h3>Mark states individually</h3>
+
+<p>So far, we&rsquo;ve created a map of visited countries, but what if we want to get more specific and mark individual states or regions that we&rsquo;ve visited? Luckily, just as CartoDB provides datasets for country borders, it also provides state, region and county maps for lots of countries as well. For this example, we&rsquo;ll do US states, but you can apply this to any set of regions you can find in CartoDB&rsquo;s data library (or can find GeoJSON/KML to import).</p>
+
+<p>Hop back to your dashboard and create a new dataset from the dashboard, search the Data library for &lsquo;United states&rsquo; and select the dataset <code>USA states</code> to import it. As before, you&rsquo;ll need to turn off syncing, (optionally) rename it (I went with <code>visited_us_states_dataset</code>) before running the following SQL:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">visited_us_states_dataset</span>
+</span><span class='line'><span class="k">ADD</span> <span class="n">visited</span> <span class="nb">boolean</span>
+</span><span class='line'><span class="k">DEFAULT</span> <span class="k">false</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>As long as the table name is correct, you&rsquo;ll now have a <code>visited</code> column in your table. As before, fill it in manually to mark the states you&rsquo;ve visited. From here, we could create a separate map just and define styling options just as we did before, leaving the map looking something like this:</p>
+
+<p><img class="center" src="http://SteveUpton.github.io/images/posts/map-just-states.png" title="Map of the USA with just visited states shaded" ></p>
+
+<p>Alternatively, we could include this dataset as a layer in the map we created earlier, which gives us lots more options. Let&rsquo;s do that. Back on your original Visited Countries map (not the dataset), click the blue <code>+</code> button near the top right and select the <code>visited_us_states_dataset</code> we just created to create a layer from it. Then, simply define your styling as before so we only shade the visited states. If we displayed the map now, we&rsquo;d overlay both datasets on eachother, which kinda defeats the purpose of the exercise:</p>
+
+<p><img class="center" src="http://SteveUpton.github.io/images/posts/map-overlayed.png" title="Map of the USA with visited states shaded overlayed with the rest of the USA" ></p>
+
+<p>One option is to go back to the original <code>visited_countries_dataset</code> and mark the US as un-visited, which would solve the problem but break the stat queries from the previous section (the visited countries count would be off). The simplest solution would probably be to keep the USA marked as visited, but filter it out in the map view with some SQL:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">visited_countries_dataset</span>
+</span><span class='line'><span class="k">WHERE</span> <span class="n">name</span> <span class="k">NOT</span> <span class="k">LIKE</span> <span class="s1">&#39;United States&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Which would leave us with a map that looks something like:</p>
+
+<p><img class="center" src="http://SteveUpton.github.io/images/posts/map-states-and-countries.png" title="Map with visited US states shaded as well as Canada" ></p>
+
+<p>You could also mash both dataset into a single layer with a bit more SQL:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="p">(</span>
+</span><span class='line'> <span class="k">SELECT</span>
+</span><span class='line'>  <span class="n">cartodb_id</span><span class="p">,</span> <span class="n">the_geom_webmercator</span><span class="p">,</span> <span class="n">visited</span>
+</span><span class='line'> <span class="k">FROM</span>
+</span><span class='line'>  <span class="n">visited_countries_dataset</span>
+</span><span class='line'> <span class="k">WHERE</span>
+</span><span class='line'>  <span class="n">name</span> <span class="k">NOT</span> <span class="k">LIKE</span> <span class="s1">&#39;United States&#39;</span>
+</span><span class='line'><span class="p">)</span>
+</span><span class='line'><span class="k">UNION</span>
+</span><span class='line'><span class="p">(</span>
+</span><span class='line'> <span class="k">SELECT</span>
+</span><span class='line'>  <span class="n">cartodb_id</span><span class="p">,</span> <span class="n">the_geom_webmercator</span><span class="p">,</span> <span class="n">visited</span>
+</span><span class='line'> <span class="k">FROM</span>
+</span><span class='line'>  <span class="n">visited_us_states_dataset</span>
+</span><span class='line'><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This is necessarily lossy as the two datasets have different columns, but allows you to use your other layers freely - something I&rsquo;ll be looking at in a later post. That&rsquo;s enough for now, enjoy your maps.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Round the World 3: El Gringo va al Norte]]></title>
