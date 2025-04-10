@@ -1,0 +1,38 @@
+baseURL: https://steveupton.io/
+languageCode: en-us
+title: The continuing adventures of Steve
+theme: ['PaperMod']
+permalinks:
+  page:
+    posts: /blog/:year/:month/:day/:slug/
+menu:
+  main:
+    - identifier: blog
+      name: Blog
+      url: archive
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: tags/
+      weight: 20
+    - identifier: about
+      name: About
+      url: about/
+      weight: 40
+params:
+  homeInfoParams:
+    Title: I'm Steve
+    Content: Sometimes I write things
+  socialIcons:
+    - name: linkedin
+      url: https://www.linkedin.com/in/stevejupton/
+    - name: github
+      url: https://github.com/SteveUpton
+    - name: instagram
+      url: https://www.instagram.com/steve.j.upton
+    - name: flickr
+      url: https://www.flickr.com/photos/156533715@N03/
+    - name: stackoverflow
+      url: https://stackoverflow.com/users/1214161/steve-u
+  ShowCodeCopyButtons: true
+
