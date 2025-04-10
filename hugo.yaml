@@ -35,4 +35,6 @@ params:
     - name: stackoverflow
       url: https://stackoverflow.com/users/1214161/steve-u
   ShowCodeCopyButtons: true
-
+caches:
+  images:
+    dir: :cacheDir/images
