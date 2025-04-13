@@ -100,8 +100,6 @@ Wake disoriented, no sunlight to ground me in the capsule. Around 9 I head downs
 
 ## Day 13
 
-{{< flickr href="" src="" alt="" >}}
-
 Wake a little late, bit fairly well rested. Breakfast, the out to get some (very expensive) snacks at a 7-11, passing some latin american graffiti, evoking what I saw in Buenos Aires so long ago. Shower back at the hostel, slow change of clothes then on the bus to the registry. People filter in as a bus station style ticker calls people in for paperwork. Eventually, we crowd into the small room and the ceremony (complete with Jiaci's mum dialling in from Zoom) begins. It's short and sweet, even accounting for a miswritten passport number. Outside, Jane catches the bouquet and we take photos on the lawn. A few of us split off and walk to a fancy restaurant for fancy cocktails and chips. We discuss Here, cameras and beer before splitting up. A short photoshoot later, I'm with Melody and Meta, heading to a quiet Indian cafe where we have (relatively cheap) beers and 1 (one) egg and discuss unionising, languages and the many crimes of the Dutch. "Nobody every got fired for blaming the dutch". The cafe starts filling up with acrid smoke, so we head to the wedding reception. People are just starting to arrive, so we fix ourselves some drinks at the bar, "All of the people I would expect to be around the bar are around the bar". Obviously, this is anti Australian/Irish discrimination, but rum and cokes take priority. The German influence is limited to a few wurst. Cynefin chats on the terrace and discussions of Singaporean rules and techno as it turns out Meta is also into Blawan. Drinks, karaoke and a drunken walk home.
 
 ## Day 14

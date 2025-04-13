@@ -10,7 +10,7 @@ At the end of last 2024, I was invited to a wedding in Brazil. Similar to my tri
 
 <!--more-->
 
-I'd last visited South America for my round the world trip, so this was a great opportunity to see some of the things I'd missed that last time I was here. I started with a one way ticket to Recife, knowing the wedding and subsequent few days with friends would be taken care of, but the rest of my plan was open and made up as I went.
+I'd last visited South America for my [round the world trip](/blog/2016/04/01/rtw-2), so this was a great opportunity to see some of the things I'd missed that last time I was here. I started with a one way ticket to Recife, knowing the wedding and subsequent few days with friends would be taken care of, but the rest of my plan was open and made up as I went.
 
 ## Day 0 (Wed Nov 27, 2024)
 
