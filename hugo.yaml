@@ -8,7 +8,7 @@ permalinks:
 menu:
   main:
     - identifier: blog
-      name: Blog
+      name: Archive
       url: archive
       weight: 10
     - identifier: tags
