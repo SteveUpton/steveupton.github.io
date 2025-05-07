@@ -30,7 +30,7 @@ On top of that, I made a few very minor updates to old posts, updating dead link
 
 The biggest bit of rewriting history I did was adding a few travel blogs that I never got around to posting and backdated them to around the time of the actual trip. Yeah, it's a lie, but it makes the blog archive a bit easier to skim, y'know?
 
-I archived the original Octopress blog [here](https://github.com/SteveUpton/blog-archive) and started fresh. The archive remains as a snapshot of how the blog looked before the refresh, but the new repo is clean.
+I [archived the original Octopress blog](https://github.com/SteveUpton/blog-archive) and started fresh. The archive remains as a snapshot of how the blog looked before the refresh, but the [new repo](https://github.com/SteveUpton/steveupton.github.io) is clean.
 
 ## What's next?
 
