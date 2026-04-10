@@ -40,3 +40,4 @@ params:
 caches:
   images:
     dir: :cacheDir/images
+enableRobotsTXT: true
